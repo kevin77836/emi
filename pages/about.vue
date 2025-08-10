@@ -22,12 +22,12 @@
                 <div class="c-title">
                     團隊成員
                 </div>
-                <!-- <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
+                <el-tabs v-model="activeName" class="teams-tabs" @tab-click="handleClick">
                     <el-tab-pane label="User" name="first">User</el-tab-pane>
                     <el-tab-pane label="Config" name="second">Config</el-tab-pane>
                     <el-tab-pane label="Role" name="third">Role</el-tab-pane>
                     <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
-                </el-tabs> -->
+                </el-tabs>
             </div>
         </section>
     </div>
@@ -35,8 +35,6 @@
 
 <script setup>
 import ElementPlus from 'element-plus'
-// import type { TabsPaneContext } from 'element-plus'
-
 const activeName = ref('first')
 
 </script>

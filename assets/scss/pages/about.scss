@@ -65,29 +65,16 @@
             display: flex;
             flex-direction: column;
             gap: 3.75rem;
-
-            .info-group{
-                display: flex;
-                position: relative;
-                gap: 3.75rem;
-                align-items: center;
-                .info-img{
-                    width: 40%;
-                    min-width: 40%;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
+            --el-color-primary: #{abstracts.$blue-dark};
+            .teams-tabs{
+                .el-tabs__header{
+                    width: fit-content;
                 }
-                .info-content{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2rem;
-                    .info-desc{
-                        line-height: 1.5;
-                        color: abstracts.$font-color;
-                        font-weight: 500;
-                    }
+                .el-tabs__item{
+                    padding: 0 1rem;
+                }
+                .el-tabs__active-bar{
+                    width: 100%;
                 }
             }
         }
