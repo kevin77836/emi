@@ -1,0 +1,14 @@
+@use '@/assets/scss/mixins/index' as mixins;
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+.c-title{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: abstracts.$blue-dark;
+    @include mixins.max-lg{
+        font-size: 1.25rem;
+    }
+    &.title-grey{
+        color: abstracts.$font-color;
+    }
+}

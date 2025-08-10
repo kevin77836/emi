@@ -1,0 +1,61 @@
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+@mixin max-xxl {
+    @media (max-width: #{abstracts.$breakpoint-xxl - 1px}) {
+        @content;
+    }
+}
+
+@mixin max-xl {
+    @media (max-width: #{abstracts.$breakpoint-xl - 1px}) {
+        @content;
+    }
+}
+
+@mixin max-lg {
+    @media (max-width: #{abstracts.$breakpoint-lg - 1px}) {
+        @content;
+    }
+}
+
+@mixin max-md {
+    @media (max-width: #{abstracts.$breakpoint-md - 1px}) {
+        @content;
+    }
+}
+
+@mixin max-sm {
+    @media (max-width: #{abstracts.$breakpoint-sm - 1px}) {
+        @content;
+    }
+}
+
+@mixin min-xxl {
+    @media (min-width: abstracts.$breakpoint-xxl) {
+        @content;
+    }
+}
+
+@mixin min-xl {
+    @media (min-width: abstracts.$breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin min-lg {
+    @media (min-width: abstracts.$breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin min-md {
+    @media (min-width: abstracts.$breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin min-sm {
+    @media (min-width: abstracts.$breakpoint-sm) {
+        @content;
+    }
+}
