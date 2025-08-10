@@ -1,0 +1,30 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 20.19.0
+        - nvm use 20.19.0
+        - corepack enable
+        # 依你的鎖檔選一種，別混用：
+        # 若有 pnpm-lock.yaml：
+        - corepack prepare pnpm@9 --activate
+        - pnpm i --frozen-lockfile
+        # 若用 npm（有 package-lock.json）就改成：
+        # - npm ci
+    build:
+      commands:
+        # Nuxt：選你的部署型態
+        # 靜態託管（Amplify Static Hosting）：
+        - npx nuxi generate
+        # 或 SSR（自己吃 Node）：
+        # - npx nuxi build
+  artifacts:
+    # 靜態託管對應目錄：
+    baseDirectory: .output/public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .pnpm-store/**/*

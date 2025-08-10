@@ -6,7 +6,7 @@
                     <img src="/logo.svg" alt="">
                 </div>
                 <div class="left-btn-group">
-                    <a href="#" class="left-btn">關於中心</a>
+                    <a href="/about" class="left-btn">關於中心</a>
                     <a href="#" class="left-btn">最新消息</a>
                     <a href="#" class="left-btn">中心活動</a>
                     <a href="#" class="left-btn">學習資源</a>
@@ -31,7 +31,7 @@
             </div>
             <div class="hamburger-menu" :class="{'active': hamburgerActive}">
                 <div class="hamburger-menu-group hamburger-menu-group-1">
-                    <a href="#" class="hamburger-menu-item">關於中心</a>
+                    <a href="/about" class="hamburger-menu-item">關於中心</a>
                     <a href="#" class="hamburger-menu-item">最新消息</a>
                     <a href="#" class="hamburger-menu-item">中心活動</a>
                     <a href="#" class="hamburger-menu-item">學習資源</a>

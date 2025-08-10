@@ -4,6 +4,7 @@
 .c-title{
     font-size: 1.75rem;
     font-weight: 700;
+    line-height: 1.5;
     color: abstracts.$blue-dark;
     @include mixins.max-lg{
         font-size: 1.25rem;
