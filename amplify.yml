@@ -3,12 +3,26 @@ frontend:
   phases:
     preBuild:
       commands:
+        # 1) 切到 Node 20.19.0（確保 nvm 有被載入）
+        - export NVM_DIR="$HOME/.nvm"
+        - . "$NVM_DIR/nvm.sh"
+        - nvm install 20.19.0
+        - nvm use 20.19.0
+        - node -v
+
+        # 2) 選一種套件管理器（下方以 pnpm 為例；若用 npm 請換成 npm ci）
         - corepack enable
-        - npx --yes nypm i
+        - corepack prepare pnpm@9 --activate
+        - pnpm i --frozen-lockfile
     build:
       commands:
-        - npm run build
+        # Nuxt 靜態化（Amplify 靜態託管用）
+        - npx nuxi generate
   artifacts:
-    baseDirectory: .amplify-hosting
+    baseDirectory: .output/public
     files:
       - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .pnpm-store/**/*

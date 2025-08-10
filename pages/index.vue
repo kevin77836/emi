@@ -1,5 +1,5 @@
 <template>
-    <div class="p-about">
+    <div class="p-main-page">
         <section class="hero-section">
             <div class="hero-bg">
                 <img src="/main-page/hero_bg.jpg" alt="">

@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['~/assets/scss/main.scss'],
   devtools: { enabled: true },
+  compilerOptions: {
+    "types": ["element-plus/global"]
+  },
   modules: [
     'nuxt-swiper'
   ],

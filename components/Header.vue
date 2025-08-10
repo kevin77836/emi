@@ -2,9 +2,9 @@
     <div class="c-header">
         <div class="header-wrap">
             <div class="left-group">
-                <div class="logo-wrap">
+                <a href="/" class="logo-wrap">
                     <img src="/logo.svg" alt="">
-                </div>
+                </a>
                 <div class="left-btn-group">
                     <a href="/about" class="left-btn">關於中心</a>
                     <a href="#" class="left-btn">最新消息</a>
