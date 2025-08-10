@@ -76,6 +76,15 @@
                 .el-tabs__active-bar{
                     width: 100%;
                 }
+                .team-grid {
+                    padding-top: 7.5rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;   /* 手機：一欄 */
+                    gap: 3.75rem 2.5rem;
+                    @include mixins.max-lg {
+                        grid-template-columns: 1fr;
+                    }
+                }
             }
         }
     }

@@ -13,7 +13,7 @@
                         Learn in two languages, go twice as far 
                     </div>
                 </div>
-                <a href="#" class="hero-cta-group">
+                <a href="/about" class="hero-cta-group">
                     <div class="hero-cta-text">
                         關於中心
                     </div>

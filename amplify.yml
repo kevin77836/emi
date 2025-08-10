@@ -6,12 +6,10 @@ frontend:
         - export NVM_DIR="$HOME/.nvm"
         - . "$NVM_DIR/nvm.sh"
         - nvm use 20.19.0
-        - corepack enable
-        - corepack prepare pnpm@9 --activate
-        - pnpm i --frozen-lockfile
+        - npm ci
     build:
       commands:
-        - npx nuxi generate
+        - NUXT_TELEMETRY_DISABLED=1 npx nuxi generate
   artifacts:
     baseDirectory: .output/public
     files:
@@ -19,4 +17,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-      - .pnpm-store/**/*

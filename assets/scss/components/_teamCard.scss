@@ -1,0 +1,38 @@
+@use '@/assets/scss/abstracts/index' as abstracts;
+@use '@/assets/scss/mixins/index' as mixins;
+.c-team-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    border-bottom: 1px solid abstracts.$font-color;
+    color: abstracts.$font-color;
+    @include mixins.max-lg {
+        padding: 0 0.75rem 1.25rem 0.75rem;
+    }
+    .department-title{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    .name-group{
+        display: flex;
+        align-items: flex-end;
+        gap: 0.75rem;
+        margin-bottom: 2.25rem;
+        .name{
+            font-size: 1.25rem;
+        }
+        .name-title{
+            font-size: 0.875rem;
+        }
+    }
+    .team-desc{
+        margin-bottom: 2rem;
+    }
+    .info-group{
+        display: flex;
+        justify-content: space-between;
+        @include mixins.max-lg {
+            flex-direction: column;
+        }
+    }
+}
