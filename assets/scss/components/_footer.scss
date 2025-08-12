@@ -9,8 +9,8 @@
     color: white;
     display: flex;
     justify-content: center;
-    font-family: "Noto Sans TC", sans-serif;
-    @include mixins.max-md{
+    font-family: "Inter", sans-serif;
+    @include mixins.max-lg{
         padding: 3.75rem 2.5rem;
     }
     .footer-wrap{
@@ -33,9 +33,9 @@
             }
             .copyright{
                 font-size: 0.875rem;
-                font-weight: 200;
+                font-weight: 400;
             }
-            @include mixins.max-xl{
+            @include mixins.max-xxl{
                 display: none;
             };
         }
@@ -47,6 +47,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
+                width: 270px;
+                @include mixins.max-lg{
+                    width: 100%;
+                }
                 .group-title{
                     font-weight: 500;
                 }
@@ -55,12 +59,18 @@
                     flex-direction: column;
                     gap: 1rem;
                     .info{
-                        font-weight: 200;
+                        font-weight: 400;
                         font-size: 0.875rem;
                         color: abstracts.$grey-300;
                         &.info-link{
                             &:hover{
                                 color: white;
+                            }
+                        }
+                        .address-br{
+                            display: none;
+                            @include mixins.max-sm{
+                                display: block;
                             }
                         }
                     }
@@ -80,12 +90,12 @@
             .copyright{
                 display: none;
             }
-            @include mixins.max-md{
+            @include mixins.max-lg{
                 flex-direction: column;
                 .copyright{
                     display: block;
                     font-size: 0.875rem;
-                    font-weight: 200;
+                    font-weight: 400;
                 }
             };
         }

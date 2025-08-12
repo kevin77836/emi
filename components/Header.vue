@@ -19,7 +19,6 @@
                     <a href="#" class="right-btn">教師</a>
                     <a href="#" class="right-btn">學生</a>
                     <a href="#" class="right-btn">助教</a>
-                    <a href="#" class="right-btn">國際生</a>
                 </div>
                 <div class="sperate-line"></div>
                 <a href="#" class="lang-btn">

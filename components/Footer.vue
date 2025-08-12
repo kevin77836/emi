@@ -6,7 +6,7 @@
                     <img src="/logo.svg" alt="">
                 </div>            
                 <div class="copyright">
-                    © 2023 NYCU EMI
+                    © 2025 NYCU EMI
                 </div>
             </div>
             <div class="footer-info-group">
@@ -15,7 +15,7 @@
                         Contact
                     </div>
                     <div class="info-group">
-                        <div class="info address">新竹市大學路1001號科學1館1樓115B</div>
+                        <div class="info address">新竹市大學路1001號<br class="address-br">科學1館1樓115B</div>
                         <div class="info tel">TEL  (03) 571-2121</div>
                         <div class="info email">EMAIL obe@nycu.edu.tw</div>
                     </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    © 2023 NYCU EMI
+                    © 2025 NYCU EMI
                 </div>
             </div>
         </div>

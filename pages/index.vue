@@ -24,68 +24,71 @@
             </div>
         </section>
         <section class="news-section">
-            <div class="news-group">
-                <div class="c-title">
-                    最新消息
+            <div class="section-wrapper">
+                <div class="news-group">
+                    <div class="c-title">
+                        最新消息
+                    </div>
+                    <div class="news-item-group">
+                        <div class="news-item">
+                            <div class="item-title">
+                                申請英語檢測獎勵說明
+                            </div>
+                            <div class="item-date">
+                                2025/6/4
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="item-title">
+                                申請英語檢測獎勵說明
+                            </div>
+                            <div class="item-date">
+                                2025/6/4
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="item-title">
+                                申請英語檢測獎勵說明
+                            </div>
+                            <div class="item-date">
+                                2025/6/4
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="item-title">
+                                申請英語檢測獎勵說明
+                            </div>
+                            <div class="item-date">
+                                2025/6/4
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="c-button">
+                        <div class="hero-cta-text">
+                            更多消息
+                        </div>
+                        <div class="hero-cta-img">
+                            <img src="/icon-arrow.svg" alt="">
+                        </div>
+                    </a>
                 </div>
-                <div class="news-item-group">
-                    <div class="news-item">
-                        <div class="item-title">
-                            申請英語檢測獎勵說明
-                        </div>
-                        <div class="item-date">
-                            2025/6/4
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="item-title">
-                            申請英語檢測獎勵說明
-                        </div>
-                        <div class="item-date">
-                            2025/6/4
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="item-title">
-                            申請英語檢測獎勵說明
-                        </div>
-                        <div class="item-date">
-                            2025/6/4
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="item-title">
-                            申請英語檢測獎勵說明
-                        </div>
-                        <div class="item-date">
-                            2025/6/4
-                        </div>
-                    </div>
+                <div class="img-carousel">
+                    <ClientOnly>
+                        <Swiper v-bind="swiperConfig" :modules="modules">
+                            <SwiperSlide>
+                                <img src="/main-page/news-img/news-img-1.avif" alt="">
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="/main-page/news-img/news-img-2.avif" alt="">
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src="/main-page/news-img/news-img-3.avif" alt="">
+                            </SwiperSlide>
+                        </Swiper>
+                    </ClientOnly>
                 </div>
-                <a href="#" class="c-button">
-                    <div class="hero-cta-text">
-                        更多消息
-                    </div>
-                    <div class="hero-cta-img">
-                        <img src="/icon-arrow.svg" alt="">
-                    </div>
-                </a>
             </div>
-            <div class="img-carousel">
-                <ClientOnly>
-                    <Swiper v-bind="swiperConfig" :modules="modules">
-                        <SwiperSlide>
-                            <img src="/main-page/news-img/news-img-1.avif" alt="">
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/main-page/news-img/news-img-2.avif" alt="">
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/main-page/news-img/news-img-3.avif" alt="">
-                        </SwiperSlide>
-                    </Swiper>
-                </ClientOnly>
-            </div>
+
         </section>
         <section class="contact-us-section">
             <div class="contact-us-group">
@@ -103,7 +106,7 @@
                     </div>
                 </div>
                 <div class="map-group">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463648.02014302457!2d120.42071467343749!3d24.78688620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683657ef245f31%3A0x3929da7f3a723e9a!2z5ZyL56uL6Zm95piO5Lqk6YCa5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1754843561643!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4713.778239956684!2d120.99147726707352!3d24.787126790511007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683657ef245f31%3A0x3929da7f3a723e9a!2z5ZyL56uL6Zm95piO5Lqk6YCa5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1754984358570!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
