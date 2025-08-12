@@ -8,6 +8,7 @@
     padding: 2rem 5rem;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid abstracts.$grey-100;
     @include mixins.max-xl{
         padding: 1.25rem;
     }

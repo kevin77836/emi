@@ -7,8 +7,20 @@
                     Learn in two languages, go twice as far 
                 </div>
                 <div class="info-group">
-                    <div class="info-img">
-                        <img src="/about/main-img.avif" alt="">
+                    <div class="info-img-carousel">
+                        <ClientOnly>
+                            <Swiper v-bind="swiperConfig" :modules="modules">
+                                <SwiperSlide>
+                                    <img src="/main-page/news-img/news-img-1.avif" alt="">
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="/main-page/news-img/news-img-2.avif" alt="">
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="/main-page/news-img/news-img-3.avif" alt="">
+                                </SwiperSlide>
+                            </Swiper>
+                        </ClientOnly>
                     </div>
                     <div class="info-content">
                         <div class="info-title c-title">關於中心</div>
@@ -102,7 +114,26 @@
 </template>
 
 <script setup>
-import ElementPlus from 'element-plus'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import ElementPlus from 'element-plus';
+
+const modules = [Autoplay, EffectFade]
+
+const swiperConfig = {
+  slidesPerView: 1,
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false
+  },
+  speed: 500,
+}
+
 const activeName = ref('center');
 
 const centerTeam = ref([
@@ -111,76 +142,63 @@ const centerTeam = ref([
         name: '張靜芬',
         title: '副教務長',
         desc: '綜理及推動雙語計畫工作',
-        tel: '(03)5171-2121  #31891',
+        tel: '(03)5171-2121 #31891',
         email: 'Email : cfchang@nycu.edu.tw'
     },
     {
-        departmentTitle: '中心副主任',
-        name: '盧家鋒',
-        title: '副教務長',
-        desc: '輔助主任處理中心業務',
-        tel: '(02)2826-7000  #67308',
-        email: 'Email : alvin4016@nycu.edu.tw'
-    },
-    {
-        departmentTitle: '中心副主任',
-        name: '高瑀絜',
-        desc: '輔助主任處理中心業務',
-        tel: '(02)2826-7000  #67229',
-        email: 'Email : jillkao@nycu.edu.tw'
-    },
-    {
-        departmentTitle: '中心助理',
-        name: '黃怡真',
-        desc: '綜理中心業務及其他臨時交辦事項',
-        tel: '(03)5171-2121  #31896/50192',
-        email: 'Email : geniela@nycu.edu.tw'
+        departmentTitle: '中心專員',
+        name: '蘇芳渝',
+        desc: '推廣及辦理教師雙語活動',
+        tel: '(03)5171-2121 #31896',
+        email: 'Email : isuresu@nycu.edu.tw'
     },
     {
         departmentTitle: '中心助理',
         name: '廖慧榆',
         desc: '推廣及辦理學生雙語活動',
-        tel: '(03)5171-2121  #31896',
+        tel: '(03)5171-2121 #31836',
         email: 'Email : krisliao@nycu.edu.tw'
     },
     {
         departmentTitle: '中心助理',
-        name: '蘇芳渝',
+        name: '黃昇華',
         desc: '推廣及辦理教師雙語活動',
-        tel: '(03)5171-2121  #31856',
-        email: 'Email : isuresu@nycu.edu.tw'
+        tel: '(03)5171-2121 #31856',
+        email: 'Email : indyeel@nycu.edu.tw'
     },
+    
+    
 ]);
 
 const englishTeam = ref([
     {
         departmentTitle: '語言教學與研究中心',
         name: '吳思葦',
-        tel: '(03) 571-2121  #52767',
+        tel: '(03)571-2121 #52767',
         email: 'Email : lindawu@nycu.edu.tw'
     },
     {
         departmentTitle: '語言教學與研究中心',
         name: '李麥德 Michael P. Nicholas',
-        tel: '(03) 571-2121  #52773',
+        tel: '(03) 571-2121 #52773',
         email: 'Email : mpnicholas@nycu.edu.tw'
     },
     {
         departmentTitle: '語言教學與研究中心',
         name: '秦毓婷',
-        tel: '(03) 571-2121  #52768',
+        tel: '(03) 571-2121 #52768',
         email: 'Email : chintiffany@nycu.edu.tw'
     },
     {
         departmentTitle: '英語教學研究所 / 語言教學與研究中心',
         name: '張月菁',
-        tel: '(03) 571-2121  #52776',
+        tel: '(03) 571-2121 #52776',
         email: 'Email : yuehchingchang@nycu.edu.tw'
     },
     {
         departmentTitle: '英語教學研究所 / 語言教學與研究中心',
         name: '楊芳盈',
-        tel: '(03) 571-2121  #50130',
+        tel: '(03) 571-2121 #50130',
         email: 'Email : fyang@nycu.edu.tw'
     },
 ]);
@@ -195,7 +213,7 @@ const chineseTeam = ref([
     {
         departmentTitle: '華語教師團隊',
         name: '鄭彩娥',
-        tel: '(03) 571-2121  #52402',
+        tel: '(03) 571-2121 #52402',
         email: 'Email : vickiezheng@nycu.edu.tw'
     },
 ]);

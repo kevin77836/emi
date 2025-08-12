@@ -12,6 +12,7 @@
     .department-title{
         font-size: 0.75rem;
         margin-bottom: 1rem;
+        font-family: "Inter", sans-serif;
     }
     .name-group{
         display: flex;
@@ -27,10 +28,12 @@
     }
     .team-desc{
         margin-bottom: 2rem;
+        font-family: "Inter", sans-serif;
     }
     .info-group{
         display: flex;
         justify-content: space-between;
+        font-family: "Inter", sans-serif;
         @include mixins.max-lg {
             flex-direction: column;
             gap: 0.5rem;

@@ -25,7 +25,7 @@
                     EN
                 </a>
             </div>
-            <div class="hamburger" :class="{'active': hamburgerActive}" @click="hamburgerActive = !hamburgerActive">
+            <div class="hamburger" :class="{'active': hamburgerActive}" @click="toggleHamburger">
                 <div class="bar"></div>
             </div>
             <div class="hamburger-menu" :class="{'active': hamburgerActive}">
@@ -54,4 +54,14 @@
 
 <script setup>
     const hamburgerActive = ref(false);
+    const toggleHamburger = () => {
+        hamburgerActive.value = !hamburgerActive.value;
+
+        if (hamburgerActive.value) {
+            document.body.style.overflow = 'hidden';
+            window.scrollTo({ top: 0, behavior: 'auto' })
+        } else {
+            document.body.style.overflow = '';
+        }
+    };
 </script>

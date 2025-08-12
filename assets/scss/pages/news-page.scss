@@ -9,12 +9,12 @@
     }
     .page-section{
         display: flex;
-        padding: 6.25rem 6.25rem 7.5rem 6.25rem;
+        padding: 7.5rem 6.25rem 15rem 6.25rem;
         justify-content: center;
         @include mixins.max-lg{
             flex-direction: column;
             gap: 2.5rem;
-            padding: 2.5rem 1.5rem 3.75rem 1.5rem;
+            padding: 3.75rem 1.5rem 7.5rem 1.5rem;
         }
         .section-wrapper{
             width: 100%;
@@ -28,11 +28,12 @@
                 margin-bottom: 3.75rem;
             }
             .page-content{
+                font-family: "Inter", sans-serif;
                 width: 100%;
                 color: abstracts.$font-color;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
+                gap: 2.5rem;
                 line-height: 1.5;
                 font-weight: 500;
                 margin-bottom: 3.75rem;

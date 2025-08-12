@@ -34,16 +34,24 @@
                     flex-direction: column;
                     gap: 2.5rem;
                 }
-                .info-img{
-                    width: 40%;
-                    min-width: 40%;
+                .info-img-carousel{
+                    width: 547px;
+                    min-width: 547px;
+                    height: 379px;
+                    position: relative;
                     @include mixins.max-lg{
                         width: 100%;
                         min-width: 100%;
                     }
-                    img{
+                    .swiper-slide{
                         width: 100%;
-                        height: auto;
+                        height: 379px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
                 .info-content{
@@ -61,27 +69,41 @@
     }
     .team-section{
         display: flex;
-        padding: 6.25rem 6.25rem 7.5rem 6.25rem;
+        padding: 12.5rem 6.25rem 22.5rem 6.25rem;
         justify-content: center;
         background-color: abstracts.$grey-100;
         @include mixins.max-lg{
             flex-direction: column;
             gap: 2.5rem;
-            padding: 2.5rem 1.5rem 3.75rem 1.5rem;
+            padding: 3.75rem 1.5rem 6.75rem 1.5rem;
         }
         .section-wrapper{
             width: 100%;
             max-width: 1272px;
             display: flex;
             flex-direction: column;
-            gap: 3.75rem;
+            gap: 5rem;
             --el-color-primary: #{abstracts.$blue-dark};
+            @include mixins.max-lg{
+                gap: 4.5rem;
+            }
             .teams-tabs{
                 .el-tabs__header{
                     width: fit-content;
+                    margin-bottom: 0;
+                }
+                .el-tabs__nav{
+                    border-bottom: 2px solid abstracts.$grey-300;
                 }
                 .el-tabs__item{
-                    padding: 0 1rem 1rem 1rem;
+                    padding: 0 0rem 2rem 0rem;
+                    height: fit-content;
+                    width: 120px;
+                    font-weight: 400;
+                    color: abstracts.$grey-silver-sand;
+                    &.is-active{
+                        color: abstracts.$blue-dark;
+                    }
                 }
                 .el-tabs__active-bar{
                     height: 0.25rem;
@@ -92,8 +114,9 @@
                     grid-template-columns: 1fr 1fr;   /* 手機：一欄 */
                     gap: 3.75rem 2.5rem;
                     @include mixins.max-lg {
-                        padding-top: 3.75rem;
                         grid-template-columns: 1fr;
+                        padding-top: 3.25rem;
+                        gap: 2.5rem;
                     }
                 }
             }
