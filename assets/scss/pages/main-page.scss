@@ -131,7 +131,6 @@
                 .news-item-group{
                     display: flex;
                     flex-direction: column;
-                    gap: 1.5rem;
                     width: 100%;
                     margin-bottom: 3rem;
                     .news-item{
@@ -139,9 +138,16 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 0.5rem 0 2rem 0;
-                        border-bottom: 1px solid abstracts.$font-color;
+                        padding: 1.594rem 0;
                         gap: 2rem;
+                        border-bottom: 1px solid abstracts.$font-color;
+                        @media (hover: hover) and (pointer: fine) {
+                            &:hover{
+                                .item-title{
+                                    color: abstracts.$grey-silver-sand;
+                                }
+                            }
+                        }
                         .item-title{
                             color: abstracts.$font-color;
                             flex-grow: 1;

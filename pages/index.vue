@@ -30,38 +30,38 @@
                         最新消息
                     </div>
                     <div class="news-item-group">
-                        <div class="news-item">
+                        <a href="#" class="news-item">
                             <div class="item-title">
                                 申請英語檢測獎勵說明
                             </div>
                             <div class="item-date">
                                 2025/6/4
                             </div>
-                        </div>
-                        <div class="news-item">
+                        </a>
+                        <a href="#" class="news-item">
                             <div class="item-title">
                                 考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May”
                             </div>
                             <div class="item-date">
                                 2025/6/4
                             </div>
-                        </div>
-                        <div class="news-item">
+                        </a>
+                        <a href="#" class="news-item">
                             <div class="item-title">
                                 申請英語檢測獎勵說明
                             </div>
                             <div class="item-date">
                                 2025/6/4
                             </div>
-                        </div>
-                        <div class="news-item">
+                        </a>
+                        <a href="#" class="news-item">
                             <div class="item-title">
                                 申請英語檢測獎勵說明
                             </div>
                             <div class="item-date">
                                 2025/6/4
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <a href="#" class="c-button">
                         <div class="hero-cta-text">
