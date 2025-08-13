@@ -85,9 +85,11 @@
                         width: 100%;
                     }
                 }
-                &:hover{
-                    .hero-cta-img{
-                        transform: translateX(0.25rem);
+                @media (hover: hover) and (pointer: fine) {
+                    &:hover{
+                        .hero-cta-img{
+                            transform: translateX(0.25rem);
+                        }
                     }
                 }
             }

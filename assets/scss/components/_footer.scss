@@ -63,8 +63,10 @@
                         font-size: 0.875rem;
                         color: abstracts.$grey-300;
                         &.info-link{
-                            &:hover{
-                                color: white;
+                            @media (hover: hover) and (pointer: fine) {
+                                &:hover{
+                                    color: white;
+                                }
                             }
                         }
                     }
