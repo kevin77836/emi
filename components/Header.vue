@@ -9,6 +9,7 @@
                     <a v-for="(item, index) in menuGroups[0].items"
                        :key="'left-btn-' + index"
                        :href="item.link"
+                       :class="{active: route.name == item.value}"
                        class="left-btn">
                         {{ item.text }}
                     </a>
@@ -59,6 +60,10 @@
 </template>
 
 <script setup>
+    import { useRoute } from 'vue-router'
+
+    const route = useRoute()
+
     const hamburgerActive = ref(false);
     const toggleHamburger = () => {
         hamburgerActive.value = !hamburgerActive.value;
@@ -74,12 +79,12 @@
     const menuGroups = ref([
         {
             items: [
-                { text: '關於中心', link: '/about' },
-                { text: '最新消息', link: '/news' },
-                { text: '中心活動', link: '/activities' },
-                { text: '學習資源', link: '#' },
-                { text: '法規辦法', link: '#' },
-                { text: '聯絡中心', link: '#' }
+                { text: '關於中心', link: '/about', value:'about' },
+                { text: '最新消息', link: '/news', value:'news' },
+                { text: '中心活動', link: '/activities', value:'activities' },
+                { text: '學習資源', link: '#', value:'' },
+                { text: '法規辦法', link: '#', value:'' },
+                { text: '聯絡中心', link: '/contactUs', value:'contactUs' }
             ]
         },
         {

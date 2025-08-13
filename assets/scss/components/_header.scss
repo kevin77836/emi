@@ -41,6 +41,9 @@
                 .left-btn{
                     color: abstracts.$font-color;
                     font-weight: 500;
+                    &.active{
+                        color: abstracts.$grey-300;
+                    }
                     @media (hover: hover) and (pointer: fine) {
                         &:hover{
                             color: abstracts.$grey-300;
@@ -63,6 +66,9 @@
                 .right-btn{
                     color: abstracts.$font-color;
                     font-weight: 500;
+                    &.active{
+                        color: abstracts.$grey-300;
+                    }
                     @media (hover: hover) and (pointer: fine) {
                         &:hover{
                             color: abstracts.$grey-300;
