@@ -83,7 +83,7 @@
                 { text: '最新消息', link: '/news', value:'news' },
                 { text: '中心活動', link: '/activities', value:'activities' },
                 { text: '學習資源', link: '/resource', value:'resource' },
-                { text: '法規辦法', link: '#', value:'' },
+                { text: '法規辦法', link: '/law', value:'law' },
                 { text: '聯絡中心', link: '/contact', value:'contact' }
             ]
         },
