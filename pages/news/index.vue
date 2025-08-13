@@ -24,7 +24,7 @@
                             <div class="news-item-group">
                                 <NewsItem
                                     v-for="(item, index) in (tab.showMore ? tab.data : tab.data.slice(0, 4))"
-                                    :key="'index-news-item-' + index"
+                                    :key="'new-pane-'+tabIndex+'-news-item-' + index"
                                     :data="item"
                                 />
                             </div>

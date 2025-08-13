@@ -1,0 +1,132 @@
+@use '@/assets/scss/mixins/index' as mixins;
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+.p-activities-index{
+    animation: page-rise 1.5s abstracts.$easeOutQuint;
+    @keyframes page-rise {
+        from { transform: translateY(20px); opacity: 0; }
+        to   { transform: translateY(0);    opacity: 1; }
+    }
+
+    .hero-section{
+        position: relative;
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 7.5rem;
+        @include mixins.max-md{
+            padding: 0 1.5rem;
+            height: 10rem;
+        }
+        .hero-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .hero-info-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            color: white;
+            gap: 3rem;
+            width: 100%;
+            max-width: 1488px;
+            @include mixins.max-md{
+                gap: 1rem;
+            }
+            .title-group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                @include mixins.max-md{
+                    gap: 0;
+                }
+                .hero-title{
+                }
+                .title-ch{
+                    font-size: 1.75rem;
+                    @include mixins.max-md{
+                        font-size: 1.25rem;
+                    }
+                }
+                .title-en{
+                    font-size: 2.5rem;
+                    @include mixins.max-md{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .activities-section{
+        display: flex;
+        padding: 7.5rem 6.25rem 15rem 6.25rem;
+        justify-content: center;
+        background-color: abstracts.$grey-100;
+        @include mixins.max-lg{
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 3.75rem 1.5rem 7.5rem 1.5rem;
+        }
+        .section-wrapper{
+            width: 100%;
+            max-width: 1272px;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            --el-color-primary: #{abstracts.$blue-dark};
+            @include mixins.max-lg{
+                gap: 4.5rem;
+            }
+            .pane-content{
+                display: flex;
+                flex-direction: column;
+                gap: 3.75rem;
+                .activities-item-group{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3.75rem;
+                    @include mixins.max-md{
+                        grid-template-columns: 1fr;
+                    }
+                    .activities-item{
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        gap: 1.5rem;
+                        .activities-bn{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .activities-info-group{
+
+                        }
+
+                    }
+                }
+                .cta-group{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+}

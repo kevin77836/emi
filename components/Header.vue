@@ -6,19 +6,22 @@
                     <img src="/logo.svg" alt="">
                 </a>
                 <div class="left-btn-group">
-                    <a href="/about" class="left-btn">關於中心</a>
-                    <a href="/news" class="left-btn">最新消息</a>
-                    <a href="#" class="left-btn">中心活動</a>
-                    <a href="#" class="left-btn">學習資源</a>
-                    <a href="#" class="left-btn">法規辦法</a>
-                    <a href="#" class="left-btn">聯絡中心</a>
+                    <a v-for="(item, index) in menuGroups[0].items"
+                       :key="'left-btn-' + index"
+                       :href="item.link"
+                       class="left-btn">
+                        {{ item.text }}
+                    </a>
                 </div>
             </div>
             <div class="right-group">
                 <div class="right-btn-group">
-                    <a href="#" class="right-btn">教師</a>
-                    <a href="#" class="right-btn">學生</a>
-                    <a href="#" class="right-btn">助教</a>
+                    <a v-for="(item, index) in menuGroups[1].items"
+                       :key="'right-btn-' + index"
+                       :href="item.link"
+                       class="right-btn">
+                        {{ item.text }}
+                    </a>
                 </div>
                 <div class="sperate-line"></div>
                 <a href="#" class="lang-btn">
@@ -30,18 +33,21 @@
             </div>
             <div class="hamburger-menu" :class="{'active': hamburgerActive}">
                 <div class="hamburger-menu-group hamburger-menu-group-1">
-                    <a href="/about" class="hamburger-menu-item">關於中心</a>
-                    <a href="/news" class="hamburger-menu-item">最新消息</a>
-                    <a href="#" class="hamburger-menu-item">中心活動</a>
-                    <a href="#" class="hamburger-menu-item">學習資源</a>
-                    <a href="#" class="hamburger-menu-item">法規辦法</a>
-                    <a href="#" class="hamburger-menu-item">聯絡中心</a>
+                    <a v-for="(item, index) in menuGroups[0].items"
+                       :key="'hamburger-menu-group-1-item-' + index"
+                       :href="item.link"
+                       class="hamburger-menu-group-1-item">
+                        {{ item.text }}
+                    </a>
                 </div>
                 <div class="sperate-line"></div>
                 <div class="hamburger-menu-group hamburger-menu-group-2">
-                    <a href="#" class="hamburger-menu-item">教師</a>
-                    <a href="#" class="hamburger-menu-item">學生</a>
-                    <a href="#" class="hamburger-menu-item">助教</a>
+                    <a v-for="(item, index) in menuGroups[1].items"
+                       :key="'hamburger-menu-group-2-item-' + index"
+                       :href="item.link"
+                       class="hamburger-menu-group-2-item">
+                        {{ item.text }}
+                    </a>
                 </div>
                 <div class="sperate-line"></div>
                 <div class="hamburger-menu-group hamburger-menu-group-lang">
@@ -64,4 +70,24 @@
             document.body.style.overflow = '';
         }
     };
+
+    const menuGroups = ref([
+        {
+            items: [
+                { text: '關於中心', link: '/about' },
+                { text: '最新消息', link: '/news' },
+                { text: '中心活動', link: '/activities' },
+                { text: '學習資源', link: '#' },
+                { text: '法規辦法', link: '#' },
+                { text: '聯絡中心', link: '#' }
+            ]
+        },
+        {
+            items: [
+                { text: '教師', link: '#' },
+                { text: '學生', link: '#' },
+                { text: '助教', link: '#' }
+            ]
+        },
+    ]);
 </script>
