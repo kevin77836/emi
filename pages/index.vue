@@ -30,38 +30,11 @@
                         最新消息
                     </div>
                     <div class="news-item-group">
-                        <a href="#" class="news-item">
-                            <div class="item-title">
-                                申請英語檢測獎勵說明
-                            </div>
-                            <div class="item-date">
-                                2025/6/4
-                            </div>
-                        </a>
-                        <a href="#" class="news-item">
-                            <div class="item-title">
-                                考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May”
-                            </div>
-                            <div class="item-date">
-                                2025/6/4
-                            </div>
-                        </a>
-                        <a href="#" class="news-item">
-                            <div class="item-title">
-                                申請英語檢測獎勵說明
-                            </div>
-                            <div class="item-date">
-                                2025/6/4
-                            </div>
-                        </a>
-                        <a href="#" class="news-item">
-                            <div class="item-title">
-                                申請英語檢測獎勵說明
-                            </div>
-                            <div class="item-date">
-                                2025/6/4
-                            </div>
-                        </a>
+                        <NewsItem
+                            v-for="(item, index) in newsData"
+                            :key="'index-news-item-' + index"
+                            :data="item"
+                        />
                     </div>
                     <a href="#" class="c-button">
                         <div class="hero-cta-text">
@@ -132,4 +105,27 @@ const swiperConfig = {
   },
   speed: 500,
 }
+
+const newsData = ref([
+    {
+      title: '申請英語檢測獎勵說明',
+      date: '2025/6/4',
+      link: '#'
+    },
+    {
+      title: '️How Faculty Can Harness Generative AI for Enhanced Learning',
+      date: '2025/5/5',
+      link: '#'
+    },
+    {
+      title: '113-2 EMI TA開始報名囉!!',
+      date: '2025/4/28',
+      link: '#'
+    },
+    {
+      title: '考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May',
+      date: '2025/4/21',
+      link: '#'
+    },
+]);
 </script>

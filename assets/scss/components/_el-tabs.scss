@@ -1,0 +1,35 @@
+@use '@/assets/scss/mixins/index' as mixins;
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+.c-el-tabs{
+    .el-tabs__header{
+        width: fit-content;
+        margin-bottom: 0;
+        @include mixins.max-md{
+            width: 100%;
+        }
+    }
+    .el-tabs__nav{
+        border-bottom: 2px solid abstracts.$grey-300;
+        @include mixins.max-md{
+            width: 100%;
+        }
+    }
+    .el-tabs__item{
+        padding: 0 0rem 2rem 0rem;
+        height: fit-content;
+        width: 120px;
+        font-weight: 400;
+        color: abstracts.$grey-silver-sand;
+        font-size: 1rem;
+        @include mixins.max-md{
+            width: 100%;
+        }
+        &.is-active{
+            color: abstracts.$blue-dark;
+        }
+    }
+    .el-tabs__active-bar{
+        height: 0.25rem;
+    }
+}

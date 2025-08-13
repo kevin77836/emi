@@ -37,7 +37,7 @@
                 <div class="c-title">
                     團隊成員
                 </div>
-                <el-tabs v-model="activeName" class="teams-tabs">
+                <el-tabs v-model="activeName" class="c-el-tabs teams-tabs">
                     <el-tab-pane label="中心成員" name="center">
                         <div class="team-grid">
                             <div v-for="(memberData,index) in centerTeam" :key="'center-member-'+index" class="c-team-card">
