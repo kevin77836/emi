@@ -116,7 +116,23 @@
                             }
                         }
                         .activities-info-group{
-
+                            .title{
+                                font-family: "Inter", "Noto Sans TC", sans-serif;
+                                font-weight: 400;
+                                margin-bottom: 1.5rem;
+                            }
+                            .desc{
+                                font-family: "Inter", "Noto Sans TC", sans-serif;
+                                font-weight: 400;
+                                margin-bottom: 1rem;
+                                color: abstracts.$second-grey;
+                            }
+                            .date{
+                                font-family: "Inter", "Noto Sans TC", sans-serif;
+                                font-weight: 400;
+                                font-size: 0.875rem;
+                                color: abstracts.$blue-dark;
+                            }
                         }
 
                     }

@@ -1,3 +1,4 @@
+@use 'abstracts/index' as abstracts;
 @use 'base/index' as base;
 @use 'mixins/index' as mixins;
 @use 'layout/index' as layout;
@@ -11,6 +12,7 @@ html, body {
   font-family: "Noto Serif TC", sans-serif;
   position: relative;
   height: 100%;
+  color: abstracts.$font-color;
 }
 
 div,p,a,span,li,ul,ol,h1,h2,h3,h4,h5,h6 {
