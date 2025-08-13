@@ -4,8 +4,8 @@
 @use 'components/index' as components;
 @use 'pages/index' as pages;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 // Global styles
 html, body {
@@ -16,5 +16,5 @@ html, body {
 
 div,p,a,span,li,ul,ol,h1,h2,h3,h4,h5,h6 {
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 }

@@ -52,7 +52,7 @@
                     gap: 0;
                 }
                 .hero-title{
-                    animation: hero-rise 1s cubic-bezier(0.22, 1, 0.36, 1);
+                    animation: hero-rise 1s abstracts.$easeOutQuint;
                 }
                 .title-ch{
                     font-size: 2rem;
@@ -74,7 +74,7 @@
                 gap: 0.5rem;
                 width: fit-content;
                 opacity: 0;
-                animation: hero-rise 1s cubic-bezier(0.22, 1, 0.36, 1);
+                animation: hero-rise 1s abstracts.$easeOutQuint;
                 animation-delay: 0.3s;
                 animation-fill-mode: both;
                 .hero-cta-img{

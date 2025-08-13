@@ -2,9 +2,9 @@
 @use '@/assets/scss/abstracts/index' as abstracts;
 
 .p-about{
-    animation: page-rise 0.5s;
+    animation: page-rise 1.5s abstracts.$easeOutQuint;
     @keyframes page-rise {
-        from { transform: translateY(1.5rem); opacity: 0; }
+        from { transform: translateY(20px); opacity: 0; }
         to   { transform: translateY(0);    opacity: 1; }
     }
     .main-section{
@@ -25,7 +25,7 @@
             @include mixins.max-lg{
                 gap: 2.5rem;
             }
-            .c-title{
+            .section-title{
                 font-weight: 500;
             }
             .info-group{
@@ -60,14 +60,17 @@
                 .info-content{
                     display: flex;
                     flex-direction: column;
-                    gap: 2rem;
-                    .c-title{
-                        font-weight: 700;
-                    }
+                    gap: 1.5rem;
                     .info-desc{
-                        line-height: 1.5;
+                        
                         color: abstracts.$font-color;
-                        font-weight: 500;
+                        text-box-trim: trim-both;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.25rem;
+                        p{
+                            line-height: 1.6;
+                        }
                     }
                 }
             }
@@ -108,6 +111,9 @@
                     font-weight: 400;
                     color: abstracts.$grey-silver-sand;
                     font-size: 1rem;
+                    @include mixins.max-sm{
+                        width: 109px;
+                    }
                     &.is-active{
                         color: abstracts.$blue-dark;
                     }

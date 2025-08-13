@@ -3,22 +3,23 @@
 .c-team-card{
     display: flex;
     flex-direction: column;
-    padding: 0 1.25rem 1.5rem 1.25rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
     border-bottom: 1px solid abstracts.$font-color;
     color: abstracts.$font-color;
     @include mixins.max-lg {
-        padding: 0 0.75rem 1.5rem 0.75rem;
+        padding: 0 0.75rem 1.25rem 0.75rem;
     }
     .department-title{
         font-size: 0.75rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-family: "Inter", sans-serif;
+        font-weight: 400;
     }
     .name-group{
         display: flex;
         align-items: flex-end;
         gap: 0.75rem;
-        margin-bottom: 2.25rem;
+        margin-bottom: 1.75rem;
         .name{
             font-size: 1.25rem;
         }
@@ -27,8 +28,9 @@
         }
     }
     .team-desc{
-        margin-bottom: 2rem;
+        margin-bottom: 1.25rem;
         font-family: "Inter", sans-serif;
+        font-weight: 400;
     }
     .info-group{
         display: flex;
@@ -37,6 +39,9 @@
         @include mixins.max-lg {
             flex-direction: column;
             gap: 0.5rem;
+        }
+        .tel,.email{
+            font-weight: 400;
         }
     }
 }
