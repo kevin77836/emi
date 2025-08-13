@@ -40,7 +40,7 @@
                         </div>
                         <div class="news-item">
                             <div class="item-title">
-                                申請英語檢測獎勵說明
+                                考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May”
                             </div>
                             <div class="item-date">
                                 2025/6/4
@@ -100,7 +100,7 @@
                         交大校區
                     </div>
                     <div class="contact-group">
-                        <div class="contact-item address">30010 新竹市東區大學路1001號 科學1館1樓115B</div>
+                        <div class="contact-item address">30010 新竹市東區大學路1001號<br class="address-br">科學1館1樓115B</div>
                         <div class="contact-item tel">TEL  (03) 571-2121 分機 31836</div>
                         <div class="contact-item email">EMAIL  obe@nycu.edu.tw</div>
                     </div>

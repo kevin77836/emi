@@ -55,10 +55,16 @@
                     animation: hero-rise 1s cubic-bezier(0.22, 1, 0.36, 1);
                 }
                 .title-ch{
-                    font-size: 1.75rem;
+                    font-size: 2rem;
+                    @include mixins.max-md{
+                        font-size: 1.75rem;
+                    }
                 }
                 .title-en{
-                    font-size: 1.75rem;
+                    font-size: 2rem;
+                    @include mixins.max-md{
+                        font-size: 1.75rem;
+                    }
                 }
             }
             .hero-cta-group{
@@ -133,6 +139,7 @@
                         align-items: center;
                         padding: 0.5rem 0 2rem 0;
                         border-bottom: 1px solid abstracts.$font-color;
+                        gap: 2rem;
                         .item-title{
                             color: abstracts.$font-color;
                             flex-grow: 1;
@@ -184,6 +191,7 @@
             width: 100%;
             max-width: 1272px;
             display: flex;
+            gap: 7.5rem;
             @include mixins.max-lg{
                 flex-direction: column;
                 gap: 2rem;
@@ -218,6 +226,12 @@
                     }
                     .contact-item{
                         color: abstracts.$font-color;
+                        .address-br{
+                            display: none;
+                            @include mixins.max-sm{
+                                display: block;
+                            }
+                        }
                     }
                 }
             }

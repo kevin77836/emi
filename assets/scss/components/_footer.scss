@@ -67,12 +67,6 @@
                                 color: white;
                             }
                         }
-                        .address-br{
-                            display: none;
-                            @include mixins.max-sm{
-                                display: block;
-                            }
-                        }
                     }
                 }
                 .follow-link-group{

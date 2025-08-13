@@ -1,7 +1,7 @@
 @use '@/assets/scss/abstracts/index' as abstracts;
 
 .c-button{
-    padding: 1.25rem;
+    padding: 0.875rem 1.25rem;
     background-color: abstracts.$blue-dark;
     color: white;
     display: flex;
