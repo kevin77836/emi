@@ -35,12 +35,12 @@
     .info-group{
         display: flex;
         justify-content: space-between;
-        font-family: "Inter", sans-serif;
         @include mixins.max-lg {
             flex-direction: column;
             gap: 0.5rem;
         }
         .tel,.email{
+            font-family: "Inter", sans-serif;
             font-weight: 400;
         }
     }
