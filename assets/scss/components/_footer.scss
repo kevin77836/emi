@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     font-family: "Inter", sans-serif;
+    font-weight: 400;
     @include mixins.max-lg{
         padding: 3.75rem 2.5rem;
     }
@@ -33,6 +34,7 @@
             }
             .copyright{
                 font-size: 0.875rem;
+                font-family: "Inter", sans-serif;
                 font-weight: 400;
             }
             @include mixins.max-xxl{
@@ -59,6 +61,7 @@
                     flex-direction: column;
                     gap: 0.625rem;
                     .info{
+                        font-family: "Inter", sans-serif;
                         font-weight: 400;
                         font-size: 0.875rem;
                         color: abstracts.$grey-300;
@@ -91,6 +94,7 @@
                 .copyright{
                     display: block;
                     font-size: 0.875rem;
+                    font-family: "Inter", sans-serif;
                     font-weight: 400;
                 }
             };
