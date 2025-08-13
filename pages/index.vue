@@ -110,22 +110,22 @@ const newsData = ref([
     {
       title: '申請英語檢測獎勵說明',
       date: '2025/6/4',
-      link: '#'
+      link: '/news/page'
     },
     {
       title: '️How Faculty Can Harness Generative AI for Enhanced Learning',
       date: '2025/5/5',
-      link: '#'
+      link: '/news/page'
     },
     {
       title: '113-2 EMI TA開始報名囉!!',
       date: '2025/4/28',
-      link: '#'
+      link: '/news/page'
     },
     {
       title: '考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May',
       date: '2025/4/21',
-      link: '#'
+      link: '/news/page'
     },
 ]);
 </script>

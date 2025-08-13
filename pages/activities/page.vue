@@ -1,28 +1,33 @@
 <template>
-    <div class="p-news-page">
+    <div class="p-activities-page">
         <section class="page-section">
             <div class="section-wrapper">
-                <div class="news-date">
-                    2025/4/7
+                <div class="activities-date">
+                    2025/6/12
                 </div>
                 <div class="c-title title-grey">
-                    考試達人分享會四月份場次開始報名囉
+                    How Faculty Can Harness Generative AI for Enhanced Learning🕵
                 </div>
                 <div class="page-content">
                     <div>
-                        為了英檢考試所苦嗎? 差一點點就達到門檻嗎?<br>
-                        讓考試達人們陪你一起面對各種考試<br>
-                        本次活動精選托福、雅思、GRE學生達人，真實的考試心得，分享獨門高分秘笈!<br>
-                        馬上報名吧 https://forms.gle/WvToYQRkCjVP6dH88 
+                        <span class="highlight">時間</span>｜114年6月12日（週四）9:00 - 11:00<br>
+                        <span class="highlight">地點</span>｜陽明交通大學 光復校區 人社一館216教室<br>
+                        <span class="highlight">線上同步直播</span>｜提供遠距參與（活動前一天寄送連結）<br>
+                        <span class="highlight">講者</span>｜ Curtis J. Bonk 教授（Indiana University, Bloomington Instructional Systems Technology）<br>
+                        <span class="highlight">講座語言</span>｜全英語演講<br>
+                        <span class="highlight">參加對象</span>｜全國大專校院教師<br>
+                        <span class="highlight">報名方式</span>｜即日起至6/9止，於表單連結 https://docs.google.com/forms/d/1ejVFUzqN7wmvblBFSVlx0n04YIqiKukTXyz2ADLN1IE/viewform?edit_requested=true<br>
+                        <span class="highlight">人數上限</span>｜實體參與35名、線上參與100名<br>
+                        <span class="highlight">聯絡人</span>｜陽明交大教發中心 吳婉萍助理 (wanping@nycu.edu.tw，03-5712121#50143)<br>
                     </div>
                     <div class="page-img">
-                        <img src="/news-page/news-img.jpg" alt="">
+                        <img src="/activities/all/all-activity-1/bn.png" alt="">
                     </div>
                 </div>
                 <div class="cta">
-                    <a href="#" class="c-button">
+                    <a href="/activities" class="c-button">
                         <div class="hero-cta-text">
-                            更多消息
+                            回上一頁
                         </div>
                         <div class="hero-cta-img">
                             <img src="/icon-arrow.svg" alt="">
