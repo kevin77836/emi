@@ -42,11 +42,11 @@
                     color: abstracts.$font-color;
                     font-weight: 500;
                     &.active{
-                        color: abstracts.$grey-300;
+                        color: abstracts.$grey-silver-sand;
                     }
                     @media (hover: hover) and (pointer: fine) {
                         &:hover{
-                            color: abstracts.$grey-300;
+                            color: abstracts.$grey-silver-sand;
                         }
                     }
                 }

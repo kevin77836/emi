@@ -1,5 +1,5 @@
 <template>
-    <div class="p-contact-us">
+    <div class="p-contact">
         <section class="contact-us-section">
             <div class="contact-us-group">
                 <div class="info-group">

@@ -1,0 +1,62 @@
+@use '@/assets/scss/mixins/index' as mixins;
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+.p-resource{
+    animation: page-rise 1.5s abstracts.$easeOutQuint;
+    @keyframes page-rise {
+        from { transform: translateY(20px); opacity: 0; }
+        to   { transform: translateY(0);    opacity: 1; }
+    }
+
+    .resource-section{
+        display: flex;
+        padding: 7.5rem 6.25rem 15rem 6.25rem;
+        justify-content: center;
+        background-color: abstracts.$grey-100;
+        @include mixins.max-lg{
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 3.75rem 1.5rem 7.5rem 1.5rem;
+        }
+        .section-wrapper{
+            width: 100%;
+            max-width: 1272px;
+            display: flex;
+            flex-direction: column;
+            gap: 3.75rem;
+            @include mixins.max-lg{
+                gap: 2.5rem;
+            }
+            .title-group{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                .title-img{
+                    width: 45px;
+                    position: relative;
+                    @include mixins.max-md{
+                        width: 38px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .link-group{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .link-gorup-title{
+                    font-size: 1.25rem;
+                    color: abstracts.$blue-dark;
+                }
+                .link-item-group{
+                    border-top: 1px solid abstracts.$font-color;
+                }
+            }
+
+        }
+
+    }
+}
