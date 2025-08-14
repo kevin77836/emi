@@ -89,9 +89,9 @@
         },
         {
             items: [
-                { text: '教師', link: '#' },
-                { text: '學生', link: '#' },
-                { text: '助教', link: '#' }
+                { text: '教師', link: '/faculty' },
+                { text: '學生', link: '/student' },
+                { text: '助教', link: '/teaching-assistant' }
             ]
         },
     ]);

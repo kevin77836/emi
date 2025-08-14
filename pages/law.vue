@@ -1,6 +1,6 @@
 <template>
-    <div class="p-law">
-        <section class="law-section">
+    <div class="p-laws">
+        <section class="laws-section">
             <div class="section-wrapper">
                 <div class="title-group">
                     <div class="title-img">
@@ -8,7 +8,7 @@
                     </div>
                     <div class="c-title title-grey">法規辦法</div>
                 </div>
-                <div class="link-group" v-for="(lawItem, index) in lawData" :key="'lawItem-'+index">
+                <div class="link-group" v-for="(lawItem, index) in lawsData" :key="'lawItem-'+index">
                     <div class="link-gorup-title">
                         {{ lawItem.title }}
                     </div>
@@ -29,9 +29,7 @@
 </template>
 
 <script setup>
-const activeName = ref('all');
-
-const lawData = ref([
+const lawsData = ref([
     {
         title: '法規辦法',
         data:[

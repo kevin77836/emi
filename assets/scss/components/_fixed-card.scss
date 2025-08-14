@@ -1,0 +1,41 @@
+@use '@/assets/scss/mixins/index' as mixins;
+@use '@/assets/scss/abstracts/index' as abstracts;
+
+.c-fixed-card{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: fit-content;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 20px 0px;
+    padding: 1.25rem;
+    border-radius: 0 6px 6px 0;
+    @include mixins.max-xl{
+        display: none;
+    }
+    .title-group{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        .title-deco{
+            width: 3px;
+            height: 1.25rem;
+            background-color: abstracts.$blue-dark;
+        }
+        .fixed-card-title{
+            color: abstracts.$blue-dark;
+            font-size: 1.25rem;
+        }
+    }
+    .fixed-card-link-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        font-family: "Inter", "Noto Sans TC", sans-serif;
+        .fixed-card-link{
+            font-weight: 400;
+        }
+    }
+}
