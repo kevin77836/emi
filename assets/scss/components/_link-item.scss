@@ -9,9 +9,14 @@
     justify-content: space-between;
     padding: 1.25rem 0;
     border-bottom: 1px solid abstracts.$font-color;
-    .link-title{
-
+    @media (hover: hover) and (pointer: fine) {
+        &:hover{
+            .link-title{
+                color: abstracts.$grey-silver-sand;
+            }
+        }
     }
+    
     .link-arrow{
         width: 1.25rem;
         position: relative;
