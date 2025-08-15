@@ -1,7 +1,7 @@
 @use '@/assets/scss/mixins/index' as mixins;
 @use '@/assets/scss/abstracts/index' as abstracts;
 
-.p-news-page{
+.p-page{
     animation: page-rise 1.5s abstracts.$easeOutQuint;
     @keyframes page-rise {
         from { transform: translateY(20px); opacity: 0; }
@@ -19,7 +19,7 @@
         .section-wrapper{
             width: 100%;
             max-width: 800px;
-            .news-date{
+            .page-date{
                 color: abstracts.$font-color;
                 font-weight: 500;
                 margin-bottom: 1.25rem;
@@ -35,8 +35,13 @@
                 flex-direction: column;
                 gap: 2.5rem;
                 line-height: 1.5;
-                font-weight: 500;
                 margin-bottom: 3.75rem;
+                &>*{
+                    font-weight: 400;
+                }
+                .highlight{
+                    font-weight: 700;
+                }
                 .page-img{
                     width: 100%;
                     position: relative;

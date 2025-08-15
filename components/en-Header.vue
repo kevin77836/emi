@@ -2,7 +2,7 @@
     <div class="c-header">
         <div class="header-wrap">
             <div class="left-group">
-                <a href="/" class="logo-wrap">
+                <a href="/en" class="logo-wrap">
                     <img src="/logo.svg" alt="">
                 </a>
                 <div class="left-btn-group">
@@ -26,8 +26,8 @@
                     </a>
                 </div>
                 <div class="sperate-line"></div>
-                <a href="/en" class="lang-btn">
-                    EN
+                <a href="/" class="lang-btn">
+                    中
                 </a>
             </div>
             <div class="hamburger" :class="{'active': hamburgerActive}" @click="toggleHamburger">
@@ -38,7 +38,7 @@
                     <a v-for="(item, index) in menuGroups[0].items"
                        :key="'hamburger-menu-group-1-item-' + index"
                        :href="item.link"
-                       class="hamburger-menu-group hamburger-menu-group-1-item">
+                       class="hamburger-menu-item hamburger-menu-group-1-item">
                         {{ item.text }}
                     </a>
                 </div>
@@ -47,13 +47,13 @@
                     <a v-for="(item, index) in menuGroups[1].items"
                        :key="'hamburger-menu-group-2-item-' + index"
                        :href="item.link"
-                       class="hamburger-menu-group hamburger-menu-group-2-item">
+                       class="hamburger-menu-item hamburger-menu-group-2-item">
                         {{ item.text }}
                     </a>
                 </div>
                 <div class="sperate-line"></div>
                 <div class="hamburger-menu-group hamburger-menu-group-lang">
-                    <a href="/en" class="hamburger-menu-item">EN</a>
+                    <a href="/" class="hamburger-menu-item">中</a>
                 </div>
             </div>
         </div>
@@ -80,19 +80,19 @@
     const menuGroups = ref([
         {
             items: [
-                { text: '關於中心', link: '/about', value:'about' },
-                { text: '最新消息', link: '/news', value:'news' },
-                { text: '中心活動', link: '/activities', value:'activities' },
-                { text: '學習資源', link: '/resource', value:'resource' },
-                { text: '法規辦法', link: '/law', value:'law' },
-                { text: '聯絡中心', link: '/contact', value:'contact' }
+                { text: 'About EMI', link: '/en/about', value:'en-about' },
+                { text: 'News', link: '/en/news', value:'en-news' },
+                { text: 'Activity', link: '/en/activities', value:'en-activities' },
+                { text: 'Learning Resources', link: '/en/resource', value:'en-resource' },
+                { text: 'Regulations', link: '/en/law', value:'en-law' },
+                { text: 'Contact', link: '/en/contact', value:'en-contact' }
             ]
         },
         {
             items: [
-                { text: '教師', link: '/faculty', value:'faculty' },
-                { text: '學生', link: '/student', value:'student' },
-                { text: '助教', link: '/teaching-assistant', value:'teaching-assistant' }
+                { text: 'Faculty', link: '/en/faculty', value:'en-faculty' },
+                { text: 'Students', link: '/en/student', value:'en-student' },
+                { text: 'TA', link: '/en/teaching-assistant', value:'en-teaching-assistant' }
             ]
         },
     ]);

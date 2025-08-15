@@ -1,12 +1,12 @@
 <template>
-    <div class="p-faculty">
+    <div class="p-teaching-assistant">
         <section id="news" class="news-section">
             <div class="section-wrapper">
                 <div class="c-title section-title">最新消息</div>
                 <div class="news-item-group">
                     <NewsItem
                         v-for="(newItem, newIndex) in (newsData.showMore ? newsData.data : newsData.data.slice(0, 4))"
-                        :key="'faculty-news-item-' + newIndex"
+                        :key="'teaching-assistant-news-item-' + newIndex"
                         :data="newItem"
                     />
                 </div>
@@ -25,13 +25,13 @@
         </section>
         <section id="resource" class="resource-section">
             <div class="section-wrapper">
-                <div class="c-title section-title">教學資源分享</div>
-                <div class="link-group" v-for="(resourceItem, resourceIndex) in resourceData" :key="'faculty-resourceItem-'+resourceIndex">
+                <div class="c-title section-title">教學與學習資源分享</div>
+                <div class="link-group" v-for="(resourceItem, resourceIndex) in resourceData" :key="'teaching-assistant-resourceItem-'+resourceIndex">
                     <div class="link-gorup-title c-title title-grey">
                         {{ resourceItem.title }}
                     </div>
                     <div class="link-item-group">
-                        <a :href="resourceData.link" class="c-link-item" v-for="(resourceData,resourceDataIndex) in resourceItem.data" :key="'faculty-resourceItem-'+resourceIndex+'-data-'+resourceDataIndex">
+                        <a :href="resourceData.link" class="c-link-item" v-for="(resourceData,resourceDataIndex) in resourceItem.data" :key="'teaching-assistant-resourceItem-'+resourceIndex+'-data-'+resourceDataIndex">
                             <div class="link-title">
                                 {{ resourceData.title }}
                             </div>
@@ -47,7 +47,7 @@
             <div class="section-wrapper">
                 <div class="c-title section-title">規章辦法</div>
                 <div class="laws-group">
-                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'faculty-lawItem-'+lawIndex" :href="lawItem.link">
+                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'teaching-assistant-lawItem-'+lawIndex" :href="lawItem.link">
                         <div class="law-card-icon">
                             <img :src="lawItem.icon" alt="">
                         </div>
@@ -61,14 +61,14 @@
         <div class="c-fixed-card">
             <div class="title-group">
                 <div class="title-deco"></div>
-                <div class="fixed-card-title">教師專區</div>
+                <div class="fixed-card-title">助教專區</div>
             </div>
             <div class="fixed-card-link-group">
                 <a href="#news" class="fixed-card-link">
                     最新消息
                 </a>
                 <a href="#resource" class="fixed-card-link">
-                    教學資源分享
+                    教學與學習資源分享
                 </a>
                 <a href="#laws" class="fixed-card-link">
                     規章辦法
@@ -88,7 +88,7 @@ const newsData = ref({
                 link: '/news/page'
             },
             {
-                title: '️How Faculty Can Harness Generative AI for Enhanced Learning',
+                title: '️How teaching-assistant Can Harness Generative AI for Enhanced Learning',
                 date: '2025/5/5',
                 link: '/news/page'
             },
@@ -112,35 +112,34 @@ const newsData = ref({
 
 const resourceData = ref([
     {
-        title: '線上課程',
+        title: 'TA培訓工作坊',
         data:[
-                {
-                    title: '牛津線上課程',
-                    link: '#'
-                },
-        ]
-    },
-    {
-        title: '英語輔助寫作工具',
-        data:[
-                {
-                    title: 'Grammarly',
-                    link: '#'
-                },
+            {
+                title: 'EMI TA 工作坊',
+                link: '#'
+            },
+            {
+                title: '語言學習與寫作中心',
+                link: '#'
+            },
+            {
+                title: '臺灣大學全英語授課教學助理培訓工作坊',
+                link: '#'
+            },
+            {
+                title: '臺灣師範大學EMI 課程教學助理專業知能培力計畫',
+                link: '#'
+            },
+
         ]
     },
 ]);
 
 const lawsData = ref([
     {
-        icon: '/faculty/icon-faculty-1.svg',
-        title: '國際教授卓越教學(DVP)補助計畫',
+        icon: '/teaching-assistant/icon-teaching-assistant-1.svg',
+        title: '外語課程修習辦法',
         link: '#'
     },
-    {
-        icon: '/faculty/icon-faculty-2.svg',
-        title: '國立陽明交通大學國際合作課程補助計畫',
-        link: '#'
-    }
 ])
 </script>

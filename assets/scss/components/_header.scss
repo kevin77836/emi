@@ -35,7 +35,7 @@
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
-                @include mixins.max-xl{
+                @include mixins.max-xxl{
                     display: none;
                 }
                 .left-btn{
@@ -56,7 +56,7 @@
             display: flex;
             align-items: center;
             gap: 1.5rem;
-            @include mixins.max-xl{
+            @include mixins.max-xxl{
                 display: none;
             }
             .right-btn-group{
@@ -100,7 +100,7 @@
             background: transparent;
             padding: 0;
             cursor: pointer;
-            @include mixins.max-xl{
+            @include mixins.max-xxl{
                 display: inline-flex;
             }
             /* 中線 */
@@ -159,7 +159,7 @@
                 display: none;
                 flex-direction: column;
                 align-items: center;
-                @include mixins.max-xl{
+                @include mixins.max-xxl{
                     display: flex;
                 }
             }
@@ -171,6 +171,7 @@
                     font-weight: 600;
                     color: abstracts.$font-color;
                     cursor: pointer;
+                    text-align: center;
                 }
             }
             .sperate-line{
