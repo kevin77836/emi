@@ -82,6 +82,13 @@
                 background-color: abstracts.$font-color;
             }
         }  
+        .lang-btn{
+            @media (hover: hover) and (pointer: fine) {
+                &:hover{
+                    color: abstracts.$grey-silver-sand;
+                }
+            }
+        }
         .hamburger {
             display: none;
             position: relative;

@@ -20,6 +20,7 @@
                     <a v-for="(item, index) in menuGroups[1].items"
                        :key="'right-btn-' + index"
                        :href="item.link"
+                       :class="{active: route.name == item.value}"
                        class="right-btn">
                         {{ item.text }}
                     </a>
@@ -89,9 +90,9 @@
         },
         {
             items: [
-                { text: '教師', link: '/faculty' },
-                { text: '學生', link: '/student' },
-                { text: '助教', link: '/teaching-assistant' }
+                { text: '教師', link: '/faculty', value:'faculty' },
+                { text: '學生', link: '/student', value:'student' },
+                { text: '助教', link: '/teaching-assistant', value:'teaching-assistant' }
             ]
         },
     ]);
