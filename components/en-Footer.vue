@@ -15,7 +15,7 @@
                         Contact
                     </div>
                     <div class="info-group">
-                        <div class="info address">新竹市大學路1001號科學1館1樓115B</div>
+                        <div class="info address">Room 115B, Science Building 1, No. 1001, Daxue Rd. East Dist., Hsinchu City 300093, Taiwan</div>
                         <div class="info tel">TEL  (03) 571-2121</div>
                         <div class="info email">EMAIL obe@nycu.edu.tw</div>
                     </div>
@@ -25,8 +25,8 @@
                         Link
                     </div>
                     <div class="info-group">
-                        <a href="https://www.nycu.edu.tw/" class="info info-link address">陽明交大首頁</a>
-                        <a href="https://aa.nycu.edu.tw/" class="info info-link tel">陽明交大教務處</a>
+                        <a href="https://www.nycu.edu.tw/" class="info info-link address">NYCU</a>
+                        <a href="https://aa.nycu.edu.tw/" class="info info-link tel">NYCU Office of Academic Affairs</a>
                     </div>
                 </div>
                 <div class="footer-info contact-group">

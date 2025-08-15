@@ -18,7 +18,10 @@
         <section class="activities-section">
             <div class="section-wrapper">
                 <el-tabs v-model="activeName" class="c-el-tabs activities-tabs">
-                    <el-tab-pane v-for="(tab,tabIndex) in activitiesData" :key="'activities-pane-'+tabIndex" :label="tab.label" :name="tab.name">
+                    <el-tab-pane v-for="(tab,tabIndex) in activitiesData" :key="'activities-pane-'+tabIndex" :name="tab.name">
+                        <template #label>
+                            <div v-html="tab.label"></div>
+                        </template>
                         <div class="pane-content">
                             <div class="c-title">{{ tab.title }}</div>
                             <div class="activities-item-group">
@@ -42,8 +45,8 @@
                             <div class="cta-group" v-if="tab.data.length > 4">
                                 <div class="c-button" @click="tab.showMore = !tab.showMore">
                                     <div class="button-text">
-                                        <span v-if="tab.showMore">較少</span>
-                                        <span v-else>更多</span>
+                                        <span v-if="tab.showMore">Less</span>
+                                        <span v-else>More</span>
                                     </div>
                                     <div class="button-img">
                                         <img src="/icon-arrow.svg" alt="">
@@ -70,63 +73,63 @@ const activitiesData = ref([
                 {
                     bn: '/activities/all/all-activity-1/bn.png',
                     title: '️How Faculty Can Harness Generative AI for Enhanced Learning🕵',
-                    desc: '美國印第安納大學教育科技領域專家 Curtis J. Bonk 教授，分享生成式AI在高等教育中的實際應用',
+                    desc: 'Professor Curtis J. Bonk, an expert in instructional technology from Indiana University, will share practical applications of generative AI in higher education.',
                     date: '2025-06-12',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-2/bn.png',
-                    title: '️EMI Support Gathering中午小聚，分享心得贏好禮',
-                    desc: '秦毓婷老師和吳思葦老師將聯合舉辦實體活動—「EMI Support Gathering」。屆時可以與老師們遊戲互動🎉、分享您的EMI學習經驗📚，還有準備了抽獎活動🎁豐富獎品等你來拿~',
+                    title: '️EMI Support Gathering: Share Your Thoughts Over Lunch and Win a Prize!',
+                    desc: 'Professors Yu-Ting Ching and Sih-Wei Wu will co-host an in-person event — “EMI Support Gathering.”Join us for fun games , interactive activities with the professors, and a chance to share your EMI learning experiences .Exciting prizes await you in our lucky draw — don’t miss out!',
                     date: '2025-05-15',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-3/bn.png',
-                    title: '113-2 EMI TA開始報名囉!!',
-                    desc: '️你知道嗎？在不同國家，當學生的方式也大不相同!  有些地方上課可以自由選學校、有些地方點名不是必要? 從功課、老師、課堂參與、甚至到打工和社團活動，每個文化對「當學生」都有不同的想像和做法。  這場活動歡迎大家一起來分享自己或同學在不同教育體系、學習方式和校園生活中的真實經驗，也可以聆聽別人的精采故事!也許你會發現，原來學習的樣貌從來不只一種!  🌍 一起聊聊，在世界各地，學生們的生活到底有多不一樣吧!',
+                    title: '2025 Cross-Cultural Dialogue – Session 3: Being a Student, the Way I Know It',
+                    desc: '️This event invites you to share your own or your classmates’ real experiences in different education systems, learning environments, and campus cultures. Come listen to fascinating stories and perspectives — you might realize that there’s no single way to learn! 🌍Let’s explore how student life differs across the globe, together!',
                     date: '2025-06-12',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-4/bn.png',
-                    title: '留學申請經驗分享會',
-                    desc: '不藏私申請技巧 × 海外升學心得 × 留學準備心法✏️ 歡迎所有對留學、跨領域申請有興趣的同學踴躍參加！',
+                    title: 'Study Abroad Application Experience Sharing Session',
+                    desc: 'Insider Application Tips × Study Abroad Insights × Preparation Strategies All students interested in studying abroad or interdisciplinary applications are welcome to join!',
                     date: '2025-05-09',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-5/bn.png',
-                    title: '113-2 EMI TA開始報名囉!!',
-                    desc: '想在EMI課堂中成為老師與學生的超級神隊友嗎？ 吳思葦老師（Linda）特別設計兩場專屬 EMI TA 的實戰工作坊，帶你全方位提升助教力！  ',
+                    title: 'Registration for 113-2 EMI TAs is now open!!',
+                    desc: 'Want to become the ultimate teammate for both teachers and students in EMI classes? Professor Sih-Wei Wu (Linda) has specially designed two hands-on workshops just for EMI TAs — helping you level up your TA skills from every angle!  ',
                     date: '2025-05-20',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-6/bn.png',
-                    title: '考試達人分享會五月份場次開始報名囉',
-                    desc: '為了英檢考試所苦嗎? 差一點點就達到門檻嗎?  讓考試達人們陪你一起面對各種考試',
+                    title: 'Registration for the May sessions of the Exam Master Talk Series is now open!',
+                    desc: 'Feeling stuck preparing for English exams? Almost reaching the benchmark but not quite there? Join our exam pros as they share strategies and support to help you overcome every testing challenge!',
                     date: '2025-05-02',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-1/bn.png',
                     title: '️How Faculty Can Harness Generative AI for Enhanced Learning🕵',
-                    desc: '美國印第安納大學教育科技領域專家 Curtis J. Bonk 教授，分享生成式AI在高等教育中的實際應用',
+                    desc: 'Professor Curtis J. Bonk, an expert in instructional technology from Indiana University, will share practical applications of generative AI in higher education.',
                     date: '2025-06-12',
                     link: '/activities/page'
                 },
                 {
                     bn: '/activities/all/all-activity-2/bn.png',
-                    title: '️EMI Support Gathering中午小聚，分享心得贏好禮',
-                    desc: '秦毓婷老師和吳思葦老師將聯合舉辦實體活動—「EMI Support Gathering」。屆時可以與老師們遊戲互動🎉、分享您的EMI學習經驗📚，還有準備了抽獎活動🎁豐富獎品等你來拿~',
+                    title: '️EMI Support Gathering: Share Your Thoughts Over Lunch and Win a Prize!',
+                    desc: 'Professors Yu-Ting Ching and Sih-Wei Wu will co-host an in-person event — “EMI Support Gathering.”Join us for fun games , interactive activities with the professors, and a chance to share your EMI learning experiences .Exciting prizes await you in our lucky draw — don’t miss out!',
                     date: '2025-05-15',
                     link: '/activities/page'
                 },
         ]
     },
     {
-        label: '教師',
+        label: 'Faculty',
         name: 'teacher',
         data:[
                 {
@@ -160,7 +163,7 @@ const activitiesData = ref([
         ]
     },
     {
-        label: '學生',
+        label: 'Students',
         name: 'student',
         data:[
                 {
@@ -194,7 +197,7 @@ const activitiesData = ref([
         ]
     },
     {
-        label: '助教',
+        label: 'Teaching<br>Assistant',
         name: 'assistant',
         data:[
                 {

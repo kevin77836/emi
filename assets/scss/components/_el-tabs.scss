@@ -22,6 +22,7 @@
         font-weight: 400;
         color: abstracts.$grey-silver-sand;
         font-size: 1rem;
+        text-align: center;
         @include mixins.max-md{
             width: 100%;
         }

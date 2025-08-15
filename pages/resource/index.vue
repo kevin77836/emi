@@ -37,7 +37,7 @@ const resourceData = ref([
         data:[
                 {
                     title: '英國牛津線上課程',
-                    link: '#'
+                    link: '/resource/oxford-EMI-training'
                 },
         ]
     },

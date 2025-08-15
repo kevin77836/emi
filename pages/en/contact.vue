@@ -4,14 +4,14 @@
             <div class="contact-us-group">
                 <div class="info-group">
                     <div class="c-title title-grey">
-                        聯絡我們
+                        Contact
                     </div>
                     <div class="info-name">
-                        交大校區
+                        Chiaotung Campus
                     </div>
                     <div class="contact-group">
-                        <div class="contact-item address">30010 新竹市東區大學路1001號<br class="address-br">科學1館1樓115B</div>
-                        <div class="contact-item tel">TEL  (03) 571-2121 分機 31836</div>
+                        <div class="contact-item address">Room 115B, Science Building 1, No. 1001, Daxue Rd. East Dist., Hsinchu City 300093, Taiwan</div>
+                        <div class="contact-item tel">TEL  (03) 571-2121 ext. 31836</div>
                         <div class="contact-item email">EMAIL  obe@nycu.edu.tw</div>
                     </div>
                 </div>

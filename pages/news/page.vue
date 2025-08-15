@@ -9,14 +9,18 @@
                     考試達人分享會四月份場次開始報名囉
                 </div>
                 <div class="page-content">
-                    <div>
-                        為了英檢考試所苦嗎? 差一點點就達到門檻嗎?<br>
-                        讓考試達人們陪你一起面對各種考試<br>
-                        本次活動精選托福、雅思、GRE學生達人，真實的考試心得，分享獨門高分秘笈!<br>
-                        馬上報名吧 https://forms.gle/WvToYQRkCjVP6dH88 
+                    <div class="page-group">
+                        <div>
+                            為了英檢考試所苦嗎? 差一點點就達到門檻嗎?<br>
+                            讓考試達人們陪你一起面對各種考試<br>
+                            本次活動精選托福、雅思、GRE學生達人，真實的考試心得，分享獨門高分秘笈!<br>
+                            馬上報名吧 https://forms.gle/WvToYQRkCjVP6dH88 
+                        </div>
                     </div>
-                    <div class="page-img">
-                        <img src="/news-page/news-img.jpg" alt="">
+                    <div class="page-group">
+                        <div class="page-img">
+                            <img src="/news-page/news-img.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="cta">

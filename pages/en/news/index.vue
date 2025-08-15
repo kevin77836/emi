@@ -18,7 +18,10 @@
         <section class="news-section">
             <div class="section-wrapper">
                 <el-tabs v-model="activeName" class="c-el-tabs news-tabs">
-                    <el-tab-pane v-for="(tab,tabIndex) in newsData" :key="'new-pane-'+tabIndex" :label="tab.label" :name="tab.name">
+                    <el-tab-pane v-for="(tab,tabIndex) in newsData" :key="'new-pane-'+tabIndex" :name="tab.name">
+                        <template #label>
+                            <div v-html="tab.label"></div>
+                        </template>
                         <div class="pane-content">
                             <div class="c-title">{{ tab.title }}</div>
                             <div class="news-item-group">
@@ -31,8 +34,8 @@
                             <div class="cta-group" v-if="tab.data.length > 4">
                                 <div class="c-button" @click="tab.showMore = !tab.showMore">
                                     <div class="button-text">
-                                        <span v-if="tab.showMore">較少</span>
-                                        <span v-else>更多</span>
+                                        <span v-if="tab.showMore">Less</span>
+                                        <span v-else>More</span>
                                     </div>
                                     <div class="button-img">
                                         <img src="/icon-arrow.svg" alt="">
@@ -54,38 +57,38 @@ const newsData = ref([
     {
         label: 'All',
         name: 'all',
-        title: '校內/外活動',
+        title: 'School activities',
         showMore: false,
         data:[
                 {
-                    title: '申請英語檢測獎勵說明',
+                    title: '【EMI Sharing】Recovery and Discovery: My Journey as an Instructor in EMI Teaching',
                     date: '2025/6/4',
                     link: '/news/page'
                 },
                 {
-                    title: '️How Faculty Can Harness Generative AI for Enhanced Learning',
+                    title: "Is Foreign Culture Foreign_Session 2_ Do's and Don'ts for College Life",
                     date: '2025/5/5',
                     link: '/news/page'
                 },
                 {
-                    title: '113-2 EMI TA開始報名囉!!',
+                    title: 'The upcoming Exam Expert Sharing Session in April',
                     date: '2025/4/28',
                     link: '/news/page'
                 },
                 {
-                    title: '考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May',
+                    title: 'Student Speakers Wanted:: Share Your Study Abroad Application Experience',
                     date: '2025/4/21',
                     link: '/news/page'
                 },
                 {
-                    title: '【EMI教師分享會】重建與探索:我的EMI教學之旅 Recovery and Discovery: My Journey as an Instructor in EMI Teaching',
+                    title: '113B Subsidization Program for EMI Supplementary Classes',
                     date: '2025/4/14',
                     link: '/news/page'
                 },
         ]
     },
     {
-        label: '教師',
+        label: 'Faculty',
         name: 'teacher',
         title: '校內/外活動',
         data:[
@@ -112,7 +115,7 @@ const newsData = ref([
         ]
     },
     {
-        label: '學生',
+        label: 'Students',
         name: 'student',
         title: '校內/外活動',
         data:[
@@ -139,7 +142,7 @@ const newsData = ref([
         ]
     },
     {
-        label: '助教',
+        label: 'Teaching<br>Assistant',
         name: 'assistant',
         title: '校內/外活動',
         data:[

@@ -2,7 +2,7 @@
     <div class="p-student">
         <section id="news" class="news-section">
             <div class="section-wrapper">
-                <div class="c-title section-title">最新消息</div>
+                <div class="c-title section-title">Latest news</div>
                 <div class="news-item-group">
                     <NewsItem
                         v-for="(newItem, newIndex) in (newsData.showMore ? newsData.data : newsData.data.slice(0, 4))"
@@ -13,8 +13,8 @@
                 <div class="cta-group" v-if="newsData.data.length > 4">
                     <div class="c-button" @click="newsData.showMore = !newsData.showMore">
                         <div class="button-text">
-                            <span v-if="newsData.showMore">較少</span>
-                            <span v-else>更多</span>
+                            <span v-if="newsData.showMore">Less</span>
+                            <span v-else>More</span>
                         </div>
                         <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
@@ -25,7 +25,7 @@
         </section>
         <section id="resource" class="resource-section">
             <div class="section-wrapper">
-                <div class="c-title section-title">學習資源分享</div>
+                <div class="c-title section-title">Resources for EMI</div>
                 <div class="link-group" v-for="(resourceItem, resourceIndex) in resourceData" :key="'student-resourceItem-'+resourceIndex">
                     <div class="link-gorup-title c-title title-grey">
                         {{ resourceItem.title }}
@@ -45,7 +45,7 @@
         </section>
         <section id="laws" class="laws-section">
             <div class="section-wrapper">
-                <div class="c-title section-title">規章辦法</div>
+                <div class="c-title section-title">Regulations</div>
                 <div class="laws-group">
                     <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'student-lawItem-'+lawIndex" :href="lawItem.link">
                         <div class="law-card-icon">
@@ -61,17 +61,17 @@
         <div class="c-fixed-card">
             <div class="title-group">
                 <div class="title-deco"></div>
-                <div class="fixed-card-title">學生專區</div>
+                <div class="fixed-card-title">Students</div>
             </div>
             <div class="fixed-card-link-group">
                 <a href="#news" class="fixed-card-link">
-                    最新消息
+                    Latest news
                 </a>
                 <a href="#resource" class="fixed-card-link">
-                    學習資源分享
+                    Resources for EMI
                 </a>
                 <a href="#laws" class="fixed-card-link">
-                    規章辦法
+                    Regulations
                 </a>
             </div>
         </div>
@@ -83,28 +83,43 @@ const newsData = ref({
     showMore: false,
     data:[
             {
-                title: '申請英語檢測獎勵說明',
+                title: "Is Foreign Culture Foreign_Session 2_ Do's and Don'ts for College Life",
                 date: '2025/6/4',
                 link: '/news/page'
             },
             {
-                title: '️How student Can Harness Generative AI for Enhanced Learning',
+                title: '️The upcoming Exam Expert Sharing Session in April',
                 date: '2025/5/5',
                 link: '/news/page'
             },
             {
-                title: '113-2 EMI TA開始報名囉!!',
+                title: 'Student Speakers Wanted:: Share Your Study Abroad Application Experience',
                 date: '2025/4/28',
                 link: '/news/page'
             },
             {
-                title: '考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May',
+                title: 'Is Foreign Culture Foreign_Session 1_Spring Celebration',
                 date: '2025/4/21',
                 link: '/news/page'
             },
             {
-                title: '【EMI教師分享會】重建與探索:我的EMI教學之旅 Recovery and Discovery: My Journey as an Instructor in EMI Teaching',
-                date: '2025/4/14',
+                title: "Is Foreign Culture Foreign_Session 2_ Do's and Don'ts for College Life",
+                date: '2025/6/4',
+                link: '/news/page'
+            },
+            {
+                title: '️The upcoming Exam Expert Sharing Session in April',
+                date: '2025/5/5',
+                link: '/news/page'
+            },
+            {
+                title: 'Student Speakers Wanted:: Share Your Study Abroad Application Experience',
+                date: '2025/4/28',
+                link: '/news/page'
+            },
+            {
+                title: 'Is Foreign Culture Foreign_Session 1_Spring Celebration',
+                date: '2025/4/21',
                 link: '/news/page'
             },
     ]
@@ -112,29 +127,29 @@ const newsData = ref({
 
 const resourceData = ref([
     {
-        title: '英文學習平台',
+        title: 'English learning platform',
         data:[
             {
-                title: '語言教學與研究中心',
+                title: 'Language Teaching and Research Center ',
                 link: '#'
             },
             {
-                title: '語言學習與寫作中心',
+                title: 'Language Learning and Writing Center (LLWC)',
                 link: '#'
             },
             {
-                title: '英語文說寫能力檢測平台',
+                title: 'Test of English for English Medium Instruction',
                 link: '#'
             },
             {
-                title: '國家發展委員會雙語資源網',
+                title: 'Bilingual Portal',
                 link: '#'
             },
 
         ]
     },
     {
-        title: '英語輔助寫作工具',
+        title: 'English writing assistant',
         data:[
             {
                 title: 'Grammarly',
@@ -143,14 +158,14 @@ const resourceData = ref([
         ]
     },
     {
-        title: '培力英檢',
+        title: 'BEST Test of English Proficiency',
         data:[
             {
-                title: 'BESTEP培力英檢',
+                title: 'BESTEP',
                 link: '#'
             },
             {
-                title: '模擬試題',
+                title: 'Practice test',
                 link: '#'
             },
         ]
@@ -160,12 +175,12 @@ const resourceData = ref([
 const lawsData = ref([
     {
         icon: '/student/icon-student-1.svg',
-        title: '外語課程修習辦法',
+        title: 'Course Selection Policy',
         link: '#'
     },
     {
         icon: '/student/icon-student-2.svg',
-        title: '國立陽明交通大學英語檢測獎勵方案',
+        title: 'English Testing Reward Program',
         link: '#'
     }
 ])

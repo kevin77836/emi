@@ -12,7 +12,6 @@
         padding: 7.5rem 6.25rem 15rem 6.25rem;
         justify-content: center;
         @include mixins.max-lg{
-            flex-direction: column;
             gap: 2.5rem;
             padding: 3.75rem 1.5rem 7.5rem 1.5rem;
         }
@@ -36,20 +35,37 @@
                 gap: 2.5rem;
                 line-height: 1.5;
                 margin-bottom: 3.75rem;
-                &>*{
-                    font-weight: 400;
-                }
-                .highlight{
-                    font-weight: 700;
-                }
-                .page-img{
-                    width: 100%;
-                    position: relative;
-                    img{
+
+                .page-group{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    &>*{
+                        font-weight: 400;
+                    }
+                    .highlight{
+                        font-weight: 700;
+                    }
+                    .page-img{
                         width: 100%;
-                        height: auto;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    a{
+                        color: abstracts.$blue-dark;
+                    }
+                    .link-group{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .warning-hint{
+                        color: red;
                     }
                 }
+
             }
             .cta{
                 display: flex;

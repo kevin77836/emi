@@ -6,7 +6,7 @@
                     <div class="title-img">
                         <img src="/icon-law.svg" alt="">
                     </div>
-                    <div class="c-title title-grey">法規辦法</div>
+                    <div class="c-title title-grey">Regulations</div>
                 </div>
                 <div class="link-group" v-for="(lawItem, index) in lawsData" :key="'lawItem-'+index">
                     <div class="link-gorup-title">
@@ -31,30 +31,26 @@
 <script setup>
 const lawsData = ref([
     {
-        title: '法規辦法',
+        title: 'Regulations',
         data:[
                 {
-                    title: '國際教授卓越教學(DVP)補助計畫',
+                    title: 'Distinguished Visiting Professorship (DVP) Subsidy Program',
                     link: '#'
                 },
                 {
-                    title: '國立陽明交通大學國際合作課程補助計畫',
+                    title: 'Subsidization Program for EMI Supplementary Classes',
                     link: '#'
                 },
                 {
-                    title: 'EMI補充課程補助方案',
+                    title: 'English Testing Reward Program',
                     link: '#'
                 },
                 {
-                    title: '國立陽明交通大學英語檢測獎勵方案',
+                    title: 'Course Selection Policy',
                     link: '#'
                 },
                 {
-                    title: '外語課程修習辦法',
-                    link: '#'
-                },
-                {
-                    title: '外籍生華語課程學分修習辦法',
+                    title: 'Regulations on Chinese Course Credits  for International Students',
                     link: '#'
                 },
         ]

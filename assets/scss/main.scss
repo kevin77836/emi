@@ -19,3 +19,12 @@ div,p,a,span,li,ul,ol,h1,h2,h3,h4,h5,h6 {
   line-height: 1.5;
   font-weight: 500;
 }
+
+ul{
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+ol{
+  list-style: decimal;
+  padding-left: 1.5rem;
+}

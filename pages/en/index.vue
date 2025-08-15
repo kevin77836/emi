@@ -15,7 +15,7 @@
                 </div>
                 <a href="/about" class="hero-cta-group">
                     <div class="hero-cta-text">
-                        關於中心
+                        About EMI
                     </div>
                     <div class="hero-cta-img">
                         <img src="/icon-arrow.svg" alt="">
@@ -27,7 +27,7 @@
             <div class="section-wrapper">
                 <div class="news-group">
                     <div class="c-title">
-                        最新消息
+                        Latest News
                     </div>
                     <div class="news-item-group">
                         <NewsItem
@@ -38,7 +38,7 @@
                     </div>
                     <a href="#" class="c-button">
                         <div class="hero-cta-text">
-                            更多消息
+                            More news
                         </div>
                         <div class="hero-cta-img">
                             <img src="/icon-arrow.svg" alt="">
@@ -67,14 +67,14 @@
             <div class="contact-us-group">
                 <div class="info-group">
                     <div class="c-title title-grey">
-                        聯絡我們
+                        Contact
                     </div>
                     <div class="info-name">
-                        交大校區
+                        Chiaotung Campus
                     </div>
                     <div class="contact-group">
-                        <div class="contact-item address">30010 新竹市東區大學路1001號<br class="address-br">科學1館1樓115B</div>
-                        <div class="contact-item tel">TEL  (03) 571-2121 分機 31836</div>
+                        <div class="contact-item address">Room 115B, Science Building 1, No. 1001, Daxue Rd. East Dist., Hsinchu City 300093, Taiwan</div>
+                        <div class="contact-item tel">TEL  (03) 571-2121 ext. 31836</div>
                         <div class="contact-item email">EMAIL  obe@nycu.edu.tw</div>
                     </div>
                 </div>
@@ -108,22 +108,22 @@ const swiperConfig = {
 
 const newsData = ref([
     {
-      title: '申請英語檢測獎勵說明',
+      title: '【EMI Sharing】Recovery and Discovery: My Journey as an Instructor in EMI Teaching',
       date: '2025/6/4',
       link: '/news/page'
     },
     {
-      title: '️How Faculty Can Harness Generative AI for Enhanced Learning',
+      title: "Is Foreign Culture Foreign_Session 2_ Do's and Don'ts for College Life",
       date: '2025/5/5',
       link: '/news/page'
     },
     {
-      title: '113-2 EMI TA開始報名囉!!',
+      title: 'The upcoming Exam Expert Sharing Session in April',
       date: '2025/4/28',
       link: '/news/page'
     },
     {
-      title: '考試達人分享會五月份場次開始報名囉/ The upcoming Exam Expert Sharing Session in May',
+      title: 'Student Speakers Wanted : Share Your Study Abroad Application Experience',
       date: '2025/4/21',
       link: '/news/page'
     },
