@@ -15,9 +15,7 @@
                 color: abstracts.$grey-silver-sand;
             }
             .link-arrow{
-                img{
-                    filter: abstracts.$grey-silver-sand-filter;
-                }
+                transform: translateX(5px);
             }
         }
     }
@@ -26,6 +24,7 @@
         width: 1.25rem;
         position: relative;
         margin: 0 0.25rem;
+        transition: transform 0.3s;
         img{
             width: 100%;
             filter: abstracts.$font-color-filter;
