@@ -19,7 +19,6 @@
             width: 100%;
             max-width: 800px;
             .page-date{
-                color: abstracts.$font-color;
                 font-weight: 500;
                 margin-bottom: 1.25rem;
             }
@@ -29,7 +28,6 @@
             .page-content{
                 font-family: "Inter", sans-serif;
                 width: 100%;
-                color: abstracts.$font-color;
                 display: flex;
                 flex-direction: column;
                 gap: 2.5rem;
@@ -45,6 +43,9 @@
                     }
                     .highlight{
                         font-weight: 700;
+                        &.blue{
+                            color: abstracts.$blue-dark;
+                        }
                     }
                     .page-img{
                         width: 100%;
@@ -55,6 +56,7 @@
                         }
                     }
                     a{
+                        font-weight: 700;
                         color: abstracts.$blue-dark;
                     }
                     .link-group{

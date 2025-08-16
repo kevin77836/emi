@@ -43,16 +43,16 @@
                 </div>
             </div>
         </section>
-        <section id="laws" class="laws-section">
+        <section id="regulations" class="regulations-section">
             <div class="section-wrapper">
                 <div class="c-title section-title">規章辦法</div>
-                <div class="laws-group">
-                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'student-lawItem-'+lawIndex" :href="lawItem.link">
-                        <div class="law-card-icon">
-                            <img :src="lawItem.icon" alt="">
+                <div class="regulations-group">
+                    <a class="c-regulation-card" v-for="(regulationItem, regulationIndex) in regulationsData" :key="'student-regulationItem-'+regulationIndex" :href="regulationItem.link">
+                        <div class="regulation-card-icon">
+                            <img :src="regulationItem.icon" alt="">
                         </div>
-                        <div class="law-card-title">
-                            {{ lawItem.title }}
+                        <div class="regulation-card-title">
+                            {{ regulationItem.title }}
                         </div>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                 <a href="#resource" class="fixed-card-link">
                     學習資源分享
                 </a>
-                <a href="#laws" class="fixed-card-link">
+                <a href="#regulations" class="fixed-card-link">
                     規章辦法
                 </a>
             </div>
@@ -116,19 +116,19 @@ const resourceData = ref([
         data:[
             {
                 title: '語言教學與研究中心',
-                link: '#'
+                link: 'https://ltrc.nycu.edu.tw/'
             },
             {
                 title: '語言學習與寫作中心',
-                link: '#'
+                link: 'https://llwc.obe.nycu.edu.tw/'
             },
             {
                 title: '英語文說寫能力檢測平台',
-                link: '#'
+                link: 'https://teemi.tw/'
             },
             {
                 title: '國家發展委員會雙語資源網',
-                link: '#'
+                link: 'https://www.ndc.gov.tw/Content_List.aspx?n=A3CE11B3737BA9EB&upn=5137965B2A81A120'
             },
 
         ]
@@ -138,7 +138,7 @@ const resourceData = ref([
         data:[
             {
                 title: 'Grammarly',
-                link: '#'
+                link: '/resource/grammarly'
             },
         ]
     },
@@ -147,26 +147,26 @@ const resourceData = ref([
         data:[
             {
                 title: 'BESTEP培力英檢',
-                link: '#'
+                link: 'https://bestep.tw/'
             },
             {
                 title: '模擬試題',
-                link: '#'
+                link: 'https://bestep.tw/exam/index.aspx'
             },
         ]
     },
 ]);
 
-const lawsData = ref([
+const regulationsData = ref([
     {
         icon: '/student/icon-student-1.svg',
         title: '外語課程修習辦法',
-        link: '#'
+        link: 'https://ltrc.nycu.edu.tw/downloads/'
     },
     {
         icon: '/student/icon-student-2.svg',
         title: '國立陽明交通大學英語檢測獎勵方案',
-        link: '#'
+        link: '/regulations/english-testing-reward-program'
     }
 ])
 </script>

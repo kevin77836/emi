@@ -43,16 +43,16 @@
                 </div>
             </div>
         </section>
-        <section id="laws" class="laws-section">
+        <section id="regulations" class="regulations-section">
             <div class="section-wrapper">
                 <div class="c-title section-title">規章辦法</div>
-                <div class="laws-group">
-                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'teaching-assistant-lawItem-'+lawIndex" :href="lawItem.link">
-                        <div class="law-card-icon">
-                            <img :src="lawItem.icon" alt="">
+                <div class="regulations-group">
+                    <a class="c-regulation-card" v-for="(regulationItem, regulationIndex) in regulationsData" :key="'teaching-assistant-regulationItem-'+regulationIndex" :href="regulationItem.link">
+                        <div class="regulation-card-icon">
+                            <img :src="regulationItem.icon" alt="">
                         </div>
-                        <div class="law-card-title">
-                            {{ lawItem.title }}
+                        <div class="regulation-card-title">
+                            {{ regulationItem.title }}
                         </div>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                 <a href="#resource" class="fixed-card-link">
                     教學與學習資源分享
                 </a>
-                <a href="#laws" class="fixed-card-link">
+                <a href="#regulations" class="fixed-card-link">
                     規章辦法
                 </a>
             </div>
@@ -119,27 +119,23 @@ const resourceData = ref([
                 link: '#'
             },
             {
-                title: '語言學習與寫作中心',
-                link: '#'
-            },
-            {
                 title: '臺灣大學全英語授課教學助理培訓工作坊',
-                link: '#'
+                link: 'https://cbe.ntu.edu.tw/focus/54'
             },
             {
                 title: '臺灣師範大學EMI 課程教學助理專業知能培力計畫',
-                link: '#'
+                link: 'https://www.obe.ntnu.edu.tw/index.php/rcemi_zh/rcemi_emi_ta_pd_zh/'
             },
 
         ]
     },
 ]);
 
-const lawsData = ref([
+const regulationsData = ref([
     {
         icon: '/teaching-assistant/icon-teaching-assistant-1.svg',
         title: '外語課程修習辦法',
-        link: '#'
+        link: '/regulations/supplementary-classes'
     },
 ])
 </script>

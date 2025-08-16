@@ -43,16 +43,16 @@
                 </div>
             </div>
         </section>
-        <section id="laws" class="laws-section">
+        <section id="regulations" class="regulations-section">
             <div class="section-wrapper">
                 <div class="c-title section-title">Regulations</div>
-                <div class="laws-group">
-                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'student-lawItem-'+lawIndex" :href="lawItem.link">
-                        <div class="law-card-icon">
-                            <img :src="lawItem.icon" alt="">
+                <div class="regulations-group">
+                    <a class="c-regulation-card" v-for="(regulationItem, regulationIndex) in regulationsData" :key="'student-regulationItem-'+regulationIndex" :href="regulationItem.link">
+                        <div class="regulation-card-icon">
+                            <img :src="regulationItem.icon" alt="">
                         </div>
-                        <div class="law-card-title">
-                            {{ lawItem.title }}
+                        <div class="regulation-card-title">
+                            {{ regulationItem.title }}
                         </div>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                 <a href="#resource" class="fixed-card-link">
                     Resources for EMI
                 </a>
-                <a href="#laws" class="fixed-card-link">
+                <a href="#regulations" class="fixed-card-link">
                     Regulations
                 </a>
             </div>
@@ -131,19 +131,19 @@ const resourceData = ref([
         data:[
             {
                 title: 'Language Teaching and Research Center ',
-                link: '#'
+                link: 'https://ltrc.nycu.edu.tw/'
             },
             {
                 title: 'Language Learning and Writing Center (LLWC)',
-                link: '#'
+                link: 'https://llwc.obe.nycu.edu.tw/'
             },
             {
                 title: 'Test of English for English Medium Instruction',
-                link: '#'
+                link: 'https://teemi.tw/'
             },
             {
                 title: 'Bilingual Portal',
-                link: '#'
+                link: 'https://www.ndc.gov.tw/Content_List.aspx?n=A3CE11B3737BA9EB&upn=5137965B2A81A120'
             },
 
         ]
@@ -153,7 +153,7 @@ const resourceData = ref([
         data:[
             {
                 title: 'Grammarly',
-                link: '#'
+                link: '/en/resource/grammarly'
             },
         ]
     },
@@ -162,21 +162,21 @@ const resourceData = ref([
         data:[
             {
                 title: 'BESTEP',
-                link: '#'
+                link: 'https://bestep.tw/'
             },
             {
                 title: 'Practice test',
-                link: '#'
+                link: 'https://bestep.tw/exam/index.aspx'
             },
         ]
     },
 ]);
 
-const lawsData = ref([
+const regulationsData = ref([
     {
         icon: '/student/icon-student-1.svg',
         title: 'Course Selection Policy',
-        link: '#'
+        link: 'https://ltrc.nycu.edu.tw/downloads/'
     },
     {
         icon: '/student/icon-student-2.svg',

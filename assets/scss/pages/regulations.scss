@@ -1,14 +1,14 @@
 @use '@/assets/scss/mixins/index' as mixins;
 @use '@/assets/scss/abstracts/index' as abstracts;
 
-.p-laws{
+.p-regulations{
     animation: page-rise 1.5s abstracts.$easeOutQuint;
     @keyframes page-rise {
         from { transform: translateY(20px); opacity: 0; }
         to   { transform: translateY(0);    opacity: 1; }
     }
 
-    .laws-section{
+    .regulations-section{
         display: flex;
         padding: 7.5rem 6.25rem 18.75rem 6.25rem;
         justify-content: center;

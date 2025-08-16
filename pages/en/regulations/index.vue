@@ -1,19 +1,19 @@
 <template>
-    <div class="p-laws">
-        <section class="laws-section">
+    <div class="p-regulations">
+        <section class="regulations-section">
             <div class="section-wrapper">
                 <div class="title-group">
                     <div class="title-img">
-                        <img src="/icon-law.svg" alt="">
+                        <img src="/icon-regulation.svg" alt="">
                     </div>
                     <div class="c-title title-grey">Regulations</div>
                 </div>
-                <div class="link-group" v-for="(lawItem, index) in lawsData" :key="'lawItem-'+index">
+                <div class="link-group" v-for="(regulationItem, index) in regulationsData" :key="'regulationItem-'+index">
                     <div class="link-gorup-title">
-                        {{ lawItem.title }}
+                        {{ regulationItem.title }}
                     </div>
                     <div class="link-item-group">
-                        <a :href="data.link" class="c-link-item" v-for="(data,dataIndex) in lawItem.data" :key="'lawItem-'+index+'-data-'+dataIndex">
+                        <a :href="data.link" class="c-link-item" v-for="(data,dataIndex) in regulationItem.data" :key="'regulationItem-'+index+'-data-'+dataIndex">
                             <div class="link-title">
                                 {{ data.title }}
                             </div>
@@ -29,17 +29,17 @@
 </template>
 
 <script setup>
-const lawsData = ref([
+const regulationsData = ref([
     {
         title: 'Regulations',
         data:[
                 {
                     title: 'Distinguished Visiting Professorship (DVP) Subsidy Program',
-                    link: '#'
+                    link: '/en/regulations/dvp'
                 },
                 {
                     title: 'Subsidization Program for EMI Supplementary Classes',
-                    link: '#'
+                    link: '/en/regulations/supplementary-classes'
                 },
                 {
                     title: 'English Testing Reward Program',
@@ -47,11 +47,11 @@ const lawsData = ref([
                 },
                 {
                     title: 'Course Selection Policy',
-                    link: '#'
+                    link: 'https://ltrc.nycu.edu.tw/downloads/'
                 },
                 {
                     title: 'Regulations on Chinese Course Credits  for International Students',
-                    link: '#'
+                    link: 'https://mandarin.ltrc.nycu.edu.tw/download/'
                 },
         ]
     },

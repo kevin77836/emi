@@ -46,7 +46,7 @@ const resourceData = ref([
         data:[
                 {
                     title: 'Grammarly',
-                    link: '#'
+                    link: '/resource/grammarly'
                 },
         ]
     },
@@ -55,11 +55,11 @@ const resourceData = ref([
         data:[
                 {
                     title: 'NYCU OBE YouTube',
-                    link: '#'
+                    link: 'https://www.youtube.com/@NYCUOBE'
                 },
                 {
                     title: "校園英語 Podcast 《Your Senpais' Here》",
-                    link: '#'
+                    link: 'https://open.firstory.me/user/senpaishere/platforms'
                 },
         ]
     },{
@@ -67,15 +67,15 @@ const resourceData = ref([
         data:[
                 {
                     title: '雙語教育與學習推動辦公室',
-                    link: '#'
+                    link: 'https://aa.nycu.edu.tw/aa/ch/app/folder/2637'
                 },
                 {
                     title: '語言教學與研究中心',
-                    link: '#'
+                    link: 'https://ltrc.nycu.edu.tw/'
                 },
                 {
                     title: '語言學習與寫作中心',
-                    link: '#'
+                    link: 'https://llwc.obe.nycu.edu.tw/'
                 },
         ]
     },
@@ -84,27 +84,27 @@ const resourceData = ref([
         data:[
                 {
                     title: '國立中山大學 南區雙語教育區域資源中心',
-                    link: '#'
+                    link: 'https://emi-tdc.nsysu.edu.tw/index.aspx'
                 },
                 {
                     title: '國立成功大學 大學雙語教師專業發展中心',
-                    link: '#'
+                    link: 'https://emipd.tw/'
                 },
                 {
                     title: '國立臺灣大學 EMI教學資源中心',
-                    link: '#'
+                    link: 'https://cbe.ntu.edu.tw/'
                 },
                 {
                     title: '國立臺灣師範大學 EMI教學資源中心',
-                    link: '#'
+                    link: 'https://www.obe.ntnu.edu.tw/index.php/rcemi_zh/'
                 },
                 {
                     title: '國立中興大學 EMI教學資源中心',
-                    link: '#'
+                    link: 'https://emitlc.nchu.edu.tw/en-US'
                 },
                 {
                     title: '國立臺灣科技大學EMI教學資源中心',
-                    link: '#'
+                    link: 'https://ntusttlc.ntust.edu.tw/'
                 },
         ]
     },

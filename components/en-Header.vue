@@ -84,7 +84,7 @@
                 { text: 'News', link: '/en/news', value:'en-news' },
                 { text: 'Activity', link: '/en/activities', value:'en-activities' },
                 { text: 'Learning Resources', link: '/en/resource', value:'en-resource' },
-                { text: 'Regulations', link: '/en/law', value:'en-law' },
+                { text: 'Regulations', link: '/en/regulations', value:'en-regulations' },
                 { text: 'Contact', link: '/en/contact', value:'en-contact' }
             ]
         },

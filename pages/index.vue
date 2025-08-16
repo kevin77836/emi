@@ -36,7 +36,7 @@
                             :data="item"
                         />
                     </div>
-                    <a href="#" class="c-button">
+                    <a href="/news" class="c-button">
                         <div class="hero-cta-text">
                             更多消息
                         </div>

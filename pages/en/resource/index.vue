@@ -46,7 +46,7 @@ const resourceData = ref([
         data:[
                 {
                     title: 'Grammarly',
-                    link: '#'
+                    link: '/en/resource/grammarly'
                 },
         ]
     },
@@ -55,11 +55,11 @@ const resourceData = ref([
         data:[
                 {
                     title: 'NYCU OBE YouTube',
-                    link: '#'
+                    link: 'https://www.youtube.com/@NYCUOBE'
                 },
                 {
                     title: "Campus English Podcast 《Your Senpais' Here》",
-                    link: '#'
+                    link: 'https://open.firstory.me/user/senpaishere/platforms'
                 },
         ]
     },{
@@ -67,15 +67,15 @@ const resourceData = ref([
         data:[
                 {
                     title: 'The Office of Bilingual Education',
-                    link: '#'
+                    link: 'https://aa.nycu.edu.tw/aa/ch/app/folder/2637'
                 },
                 {
                     title: 'Language Teaching and Research Center',
-                    link: '#'
+                    link: 'https://ltrc.nycu.edu.tw/'
                 },
                 {
                     title: 'Language Learning and Writing Center (LLWC)',
-                    link: '#'
+                    link: 'https://llwc.obe.nycu.edu.tw/'
                 },
         ]
     },
@@ -84,27 +84,27 @@ const resourceData = ref([
         data:[
                 {
                     title: 'NSYSU Resource Center for Bilingual Education',
-                    link: '#'
+                    link: 'https://emi-tdc.nsysu.edu.tw/index.aspx'
                 },
                 {
                     title: 'NCKU EMI Professional Development Center',
-                    link: '#'
+                    link: 'https://emipd.tw/'
                 },
                 {
                     title: 'NTU EMI Teaching and Learning Center',
-                    link: '#'
+                    link: 'https://cbe.ntu.edu.tw/'
                 },
                 {
                     title: 'NTNU Resource Center for EMI',
-                    link: '#'
+                    link: 'https://www.obe.ntnu.edu.tw/index.php/rcemi_zh/'
                 },
                 {
                     title: 'NCHU EMI Teaching and Learning Center',
-                    link: '#'
+                    link: 'https://emitlc.nchu.edu.tw/en-US'
                 },
                 {
                     title: 'NTUST EMI Teaching and Learning Center',
-                    link: '#'
+                    link: 'https://ntusttlc.ntust.edu.tw/'
                 },
         ]
     },

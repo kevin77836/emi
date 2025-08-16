@@ -13,7 +13,7 @@
                         Learn in two languages, go twice as far 
                     </div>
                 </div>
-                <a href="/about" class="hero-cta-group">
+                <a href="/en/about" class="hero-cta-group">
                     <div class="hero-cta-text">
                         About EMI
                     </div>
@@ -36,7 +36,7 @@
                             :data="item"
                         />
                     </div>
-                    <a href="#" class="c-button">
+                    <a href="/en/news" class="c-button">
                         <div class="hero-cta-text">
                             More news
                         </div>

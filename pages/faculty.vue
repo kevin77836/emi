@@ -43,16 +43,16 @@
                 </div>
             </div>
         </section>
-        <section id="laws" class="laws-section">
+        <section id="regulations" class="regulations-section">
             <div class="section-wrapper">
                 <div class="c-title section-title">規章辦法</div>
-                <div class="laws-group">
-                    <a class="c-law-card" v-for="(lawItem, lawIndex) in lawsData" :key="'faculty-lawItem-'+lawIndex" :href="lawItem.link">
-                        <div class="law-card-icon">
-                            <img :src="lawItem.icon" alt="">
+                <div class="regulations-group">
+                    <a class="c-regulation-card" v-for="(regulationItem, regulationIndex) in regulationsData" :key="'faculty-regulationItem-'+regulationIndex" :href="regulationItem.link">
+                        <div class="regulation-card-icon">
+                            <img :src="regulationItem.icon" alt="">
                         </div>
-                        <div class="law-card-title">
-                            {{ lawItem.title }}
+                        <div class="regulation-card-title">
+                            {{ regulationItem.title }}
                         </div>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                 <a href="#resource" class="fixed-card-link">
                     教學資源分享
                 </a>
-                <a href="#laws" class="fixed-card-link">
+                <a href="#regulations" class="fixed-card-link">
                     規章辦法
                 </a>
             </div>
@@ -116,7 +116,7 @@ const resourceData = ref([
         data:[
                 {
                     title: '牛津線上課程',
-                    link: '#'
+                    link: '/resource/oxford-EMI-training'
                 },
         ]
     },
@@ -125,22 +125,22 @@ const resourceData = ref([
         data:[
                 {
                     title: 'Grammarly',
-                    link: '#'
+                    link: '/resource/grammarly'
                 },
         ]
     },
 ]);
 
-const lawsData = ref([
+const regulationsData = ref([
     {
         icon: '/faculty/icon-faculty-1.svg',
         title: '國際教授卓越教學(DVP)補助計畫',
-        link: '#'
+        link: '/regulations/dvp'
     },
     {
         icon: '/faculty/icon-faculty-2.svg',
         title: '國立陽明交通大學國際合作課程補助計畫',
-        link: '#'
+        link: '/regulations/supplementary-classes'
     }
 ])
 </script>
