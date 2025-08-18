@@ -91,17 +91,17 @@
                     
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載申請表：</span><a href="">國際合作課程補助計畫書格式</a>
+                            <span class="highlight">下載申請表：</span><a href="https://docs.google.com/document/d/1hpDPwS2Ql4CYh-wjMDN1wFX7ZEGSAmYf/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">國際合作課程補助計畫書格式</a>
                         </div>  
                     </div>
                 </div>
                 
                 <div class="cta">
-                    <a href="/regulations" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -110,3 +110,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

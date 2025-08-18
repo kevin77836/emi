@@ -15,7 +15,7 @@
                     <div class="page-group">
                         <h4 class="highlight">二、申請對象：</h4>
                         <p>
-                            開設EMI課程之教學單位、授課教師或修習EMI課程學生。(Liberal Art College)或教學相關獎項之優秀教授為基準。配合學期系所暨校級課程審核時程，申請國際教授卓越教學計畫(DVP)華仁全球講座補助計畫需先撰寫申請書，含講者履歷、重要教學成效/獎項、系所聘任其授課簡要規劃等。並需符合課程「至少完整一學期」、「實體授課」、「多數大一新生可修」等基準，經教務處核實確認後將提供補助。
+                            開設EMI課程之教學單位、授課教師或修習EMI課程學生。
                         </p>
                     </div>
                     <div class="page-group">
@@ -58,17 +58,17 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載申請表：</span><a href="">EMI補充課程補助申請表</a>
+                            <span class="highlight">下載申請表：</span><a href="https://docs.google.com/document/d/1s4vRgxw7u0-97Te2bWwIcMzAhyW_8B8l/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">EMI補充課程補助申請表</a>
                         </div>  
                     </div>
                 </div>
                 
                 <div class="cta">
-                    <a href="/regulations" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -77,3 +77,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

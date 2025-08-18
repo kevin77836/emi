@@ -30,11 +30,11 @@
                     </div>
                 </div>
                 <div class="cta">
-                    <a href="/activities" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -43,3 +43,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

@@ -1,9 +1,12 @@
-<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="25" height="25" fill="url(#pattern0_31_877)"/>
-<defs>
-<pattern id="pattern0_31_877" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_31_877" transform="scale(0.0111111)"/>
-</pattern>
-<image id="image0_31_877" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADUElEQVR4nO3cO08UURjG8aOlFkoBCqKlH0AN1jbaKZDYGgoLE28YCwsKqcCPIGIksTJGYkG0UKMWRluovEVjB3grgHhL9G9OfDesXPccdmbO7D6/crM7855nZ2ZnZ868zomIiIiIiIiISF0AbcB+oBs4BwwDo8A48ASYAt4BM8BXYI5Fc/bajL1nyj4zbssYtmV22zraGvZrA1qAg0AfMAiMAY+A18B38ufX+cpqGLOa+qzGFpc6oAM4AlwERoCnwCzlM2u1j9hY/Jg6it7lTwG3ShpoqI92SPKHovY8At5h33YRu30qfgA3Mgsc6AE+FT3KhHwGeusd8kngd9EjS9Af4HQ9t2S/QFmZz6ZnoyHvtnNVWdsXYNdGgvbnmlKb0diQ9wC/alyJwE+gMyboC0ov2NmYoO+Hr6fpTcQE/b7pYwv3NibohYgVNbuFmKAlgoLOiYLOiYLOSZmCHijzD3FpgnaLd2xGynjFsFRBV9hN1WeUiAuVSqHAJuA48IESKG3QFcAW4BIwT8JcqFQLBTqBm6nejGiYoCuALuA5iXGhylAo/47fJ4BpEtGQQVcAW23WUeHTIFyo0hS6/B6nP34XxoUqTaErAA4Bk6Wov4giowpdvf7NdvzOdcpa0wVdAWwHrthUrvTqz6OouhRa+3j2ArfJWExhhXDZBj2RXP1ZF7SaDALWoWMldQxYP4ZrqePpnX+mJXcxxRbCbSxgP41Nf1hqERmw/oKHcmEB66JSLBd2mfQFiYnZHZMsFF34zzZodCurvtzygHVzNgvu/5APaLpBRpwm0ORmQFPCpHFO78pOQedEQSccdGnnKBdoLiZo36dIwryJCfpe4EqEuAc6zyu5YGdip1fpofusH7q3sH3vIMmyjUTVpG/f9EPW768U3xjFwu5NdXZ9w7T6qQpbzauybl61ZMv2u4hk1Y6tKux24HpeMzObssHgksB3+nNGayPZLC0z7+bWMnOdLf0w0A9ctfbCyTzAE8DX/NjG0G9jKi7YwJmcXTbzftB2uYfWWvgb+fPrfAk8sFouW22+xm2uUQGtwD7gmO2WQ8A14I5tWZVG3dPW6LD6qdl5e23a3jNpn7ljD+wP2TKP2jpaix6viIiIiIiIiIhrEH8BelVYxPQ3ygQAAAAASUVORK5CYII="/>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 282.6 250">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M141.3,32.9s82.4,0,103,5.6c11.3,3,20.2,11.9,23.2,23.2,5.6,20.6,5.4,63.5,5.4,63.5,0,.3,0,42.8-5.4,63.3-3,11.3-11.9,20.2-23.2,23.2-20.6,5.4-102.7,5.4-103,5.4,0,0-82.2,0-103-5.6-11.3-3-20.2-11.9-23.2-23.2-5.4-20.3-5.4-62.9-5.4-63.3,0,0,0-42.7,5.4-63.3,3-11.3,12.1-20.4,23.2-23.4,20.6-5.4,103-5.4,103-5.4ZM115.1,163l68.5-39.5-68.5-39.5v79Z"/>
 </svg>

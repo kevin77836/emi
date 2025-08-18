@@ -30,7 +30,7 @@
                     <div class="page-group">
                         <h4 class="highlight">三、</h4>
                         <p>
-                            修讀EMI課程學生。
+                            英語能力檢測獎勵,應於考試當學年度提出申請(配合計畫期程)。若學生先通過「培力英檢」獎勵補助,再申請其它英檢獎勵者,加碼 1000 元獎勵金。「培力英檢」及「其它英檢項目獎勵」,在學期間各以申請一次為限。雙語教育與學習辦公室得視當年度核定之計畫經費與使用情況調整補助內容。
                         </p>
                     </div>
                     <div class="page-group">
@@ -41,17 +41,17 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載 :</span><a href="">英語檢測獎勵方案</a>
+                            <span class="highlight">下載 :</span><a href="https://drive.google.com/file/d/1Dq0tT7FFCEx7kzV95XHWEn26cpqeUi9Z/view?usp=sharing">英語檢測獎勵方案</a>
                         </div>  
                     </div>
                 </div>
                 
                 <div class="cta">
-                    <a href="/regulations" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -60,3 +60,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

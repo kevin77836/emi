@@ -15,8 +15,8 @@
                             詳細內容請參閱附件：
                         </p>
                         <div class="link-group">
-                            <a href="">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
-                            <a href="">《Frequently Asked Questions》</a>
+                            <a href="https://drive.google.com/file/d/1r46nEw4JqrOg-PmuEHEPZgqlvQNIq8f1/view?usp=sharing">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
+                            <a href="https://drive.google.com/file/d/1F5l4znWx1ZLynIannC6ek9QqrkH1zRlM/view?usp=sharing">《Frequently Asked Questions》</a>
                         </div>
                     </div>
                     <div class="page-group">
@@ -66,11 +66,11 @@
                 </div>
                 
                 <div class="cta">
-                    <a href="/resource" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -79,3 +79,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

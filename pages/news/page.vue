@@ -25,10 +25,10 @@
                 </div>
                 <div class="cta">
                     <a href="/news" class="c-button">
-                        <div class="hero-cta-text">
+                        <div>
                             更多消息
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>

@@ -18,7 +18,7 @@
                     </div>
                     <div class="page-group">
                         <p>
-                            ※ To access the educational version, kindly register using the email address @nycu.edu.tw for verification purposes. <br>
+                            ※ To access the educational version, kindly register using the email address <span class="email">@nycu.edu.tw</span> for verification purposes. <br>
                             ※ Teachers who have previously applied to the EMI Teaching Resource Center of National Taiwan University (valid until June 30, 2024) need not reapply. <br>
                             ※ The application for Grammarly accounts is anticipated to commence from late December to early January. Should you be interested, we encourage early registration. <br>
                             ※ Following account activation, if the account remains inactive for over three months, our office will proceed to delete it.<br>
@@ -38,11 +38,11 @@
                 </div>
                 
                 <div class="cta">
-                    <a href="/en/resource" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             Back
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -51,3 +51,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

@@ -107,7 +107,10 @@
                         gap: 1.5rem;
                         .activities-bn{
                             width: 100%;
+                            
                             img{
+                                aspect-ratio: 3/4;
+                                object-fit: cover;
                                 width: 100%;
                             }
                         }

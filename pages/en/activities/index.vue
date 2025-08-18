@@ -20,7 +20,7 @@
                 <el-tabs v-model="activeName" class="c-el-tabs activities-tabs">
                     <el-tab-pane v-for="(tab,tabIndex) in activitiesData" :key="'activities-pane-'+tabIndex" :name="tab.name">
                         <template #label>
-                            <div v-html="tab.label"></div>
+                            <div class="en-tab" v-html="tab.label"></div>
                         </template>
                         <div class="pane-content">
                             <div class="c-title">{{ tab.title }}</div>

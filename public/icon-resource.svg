@@ -1,11 +1,28 @@
-<svg width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_20_1910)">
-<path d="M30.0964 15.6C38.7204 15.6 45.7134 8.615 45.7134 0H14.4854C14.4854 8.615 21.4774 15.6 30.1014 15.6H30.0964ZM45.7134 13.955V40.773H19.1134L45.7134 13.955Z" fill="#0000FF"/>
-<path d="M0.490234 19.812L8.64823 11.663L22.9952 25.994L14.8372 34.143L0.490234 19.812Z" fill="#0000FF"/>
-</g>
-<defs>
-<clipPath id="clip0_20_1910">
-<rect width="45" height="41" fill="white" transform="translate(0.490234)"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 460 410">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: blue;
+      }
+
+      .st2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="4.99" width="450" height="410"/>
+    </clipPath>
+  </defs>
+  <g class="st2">
+    <g>
+      <path class="st1" d="M301.05,156c86.24,0,156.17-69.85,156.17-156H144.94c0,86.15,69.92,156,156.16,156h-.05ZM457.22,139.55v268.18H191.22L457.22,139.55Z"/>
+      <path class="st1" d="M4.99,198.12l81.58-81.49,143.47,143.31-81.58,81.49L4.99,198.12Z"/>
+    </g>
+  </g>
 </svg>

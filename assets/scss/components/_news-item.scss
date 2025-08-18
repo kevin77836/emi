@@ -20,10 +20,11 @@
         font-weight: 500;
     }
     .item-date{
-        width: 4rem;
-        min-width: 4rem;
+        width: 4.5rem;
+        min-width: 4.5rem;
         color: abstracts.$blue-dark;
         font-size: 0.875rem;
         font-weight: 500;
+        align-items: right;
     }
 }

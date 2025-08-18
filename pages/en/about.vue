@@ -152,7 +152,6 @@ const centerTeam = ref([
     {
         departmentTitle: 'Director',
         name: 'Ching-Fen Chang',
-        title: '副教務長',
         desc: 'Facilitate and advance the implementation of a comprehensive bilingual program',
         tel: '(03)5171-2121 #31891',
         email: 'Email : cfchang@nycu.edu.tw'

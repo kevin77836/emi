@@ -20,7 +20,7 @@
                 <el-tabs v-model="activeName" class="c-el-tabs news-tabs">
                     <el-tab-pane v-for="(tab,tabIndex) in newsData" :key="'new-pane-'+tabIndex" :name="tab.name">
                         <template #label>
-                            <div v-html="tab.label"></div>
+                            <div class="en-tab" v-html="tab.label"></div>
                         </template>
                         <div class="pane-content">
                             <div class="c-title">{{ tab.title }}</div>
@@ -89,8 +89,8 @@ const newsData = ref([
     },
     {
         label: 'Faculty',
-        name: 'teacher',
-        title: '校內/外活動',
+        name: 'faculty',
+        title: 'Faculty',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',
@@ -117,7 +117,7 @@ const newsData = ref([
     {
         label: 'Students',
         name: 'student',
-        title: '校內/外活動',
+        title: 'Students',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',
@@ -144,7 +144,7 @@ const newsData = ref([
     {
         label: 'Teaching<br>Assistant',
         name: 'assistant',
-        title: '校內/外活動',
+        title: 'Teaching Assistant',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',

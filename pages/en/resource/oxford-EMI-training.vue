@@ -15,8 +15,8 @@
                             For detailed course information, please refer to the documents below:
                         </p>
                         <div class="link-group">
-                            <a href="">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
-                            <a href="">《Frequently Asked Questions》</a>
+                            <a href="https://drive.google.com/file/d/1r46nEw4JqrOg-PmuEHEPZgqlvQNIq8f1/view?usp=sharing">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
+                            <a href="https://drive.google.com/file/d/1F5l4znWx1ZLynIannC6ek9QqrkH1zRlM/view?usp=sharing">《Frequently Asked Questions》</a>
                         </div>
                     </div>
                     <div class="page-group">
@@ -34,7 +34,7 @@
                             <li>Registration：</li>
                             <ul>
                                 <li>Limited slots are available for our school's purchase of this course, prioritizing teachers from colleges implementing the bilingual learning plan for college students under the Ministry of Education. Remaining slots are open to full-time teachers from other colleges.</li>
-                                <li>Registration Form： https://forms.gle/uLTQNoCnvuUi5jmq8</li>
+                                <li>Registration Form：<a href="https://forms.gle/uLTQNoCnvuUi5jmq8">https://forms.gle/uLTQNoCnvuUi5jmq8</a></li>
                             </ul>
                             <li>Registration Process：</li>
                             <ul>
@@ -50,11 +50,11 @@
                 </div>
                 
                 <div class="cta">
-                    <a href="/en/resource" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             Back
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -63,3 +63,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

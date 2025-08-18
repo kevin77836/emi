@@ -44,8 +44,12 @@
                     .highlight{
                         font-weight: 700;
                         &.blue{
-                            color: abstracts.$blue-dark;
+                            color: #0000FF;
                         }
+                    }
+                    .email{
+                        font-weight: 700;
+                        color: #0099FF;
                     }
                     .page-img{
                         width: 100%;
@@ -57,7 +61,7 @@
                     }
                     a{
                         font-weight: 700;
-                        color: abstracts.$blue-dark;
+                        color: #0000FF;
                     }
                     .link-group{
                         display: flex;

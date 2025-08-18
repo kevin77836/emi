@@ -58,17 +58,17 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">Download :</span><a href="">Application Form</a>
+                            <span class="highlight">Download :</span><a href="https://docs.google.com/document/d/1s4vRgxw7u0-97Te2bWwIcMzAhyW_8B8l/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">Application Form</a>
                         </div>  
                     </div>
                 </div>
                 
                 <div class="cta">
-                    <a href="/en/regulations" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             Back
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -77,3 +77,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

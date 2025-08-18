@@ -37,6 +37,11 @@
         font-family: "Inter", "Noto Sans TC", sans-serif;
         .fixed-card-link{
             font-weight: 400;
+            @media (hover: hover) and (pointer: fine) {
+                &:hover{
+                    color: abstracts.$grey-silver-sand;
+                }
+            }
         }
     }
 }

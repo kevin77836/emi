@@ -134,7 +134,7 @@ const resourceData = ref([
 const regulationsData = ref([
     {
         icon: '/teaching-assistant/icon-teaching-assistant-1.svg',
-        title: '外語課程修習辦法',
+        title: 'EMI補充課程補助方案',
         link: '/regulations/supplementary-classes'
     },
 ])

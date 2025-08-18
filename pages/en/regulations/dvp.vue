@@ -32,26 +32,23 @@
                     </div>
                     <div class="page-group">
                         <h4 class="highlight">IV. Process</h4>
-                        <p>
-                            來台授課教師每學期每門課程100萬元經費為上限；經費涵蓋項目需符合本校主計室相關規定，並以教師薪資之人事費，以及經濟艙機票、勞健保補充保費、學校招待所住宿等業務費為基準，無設備費用補助。
-                        </p>
                         <div class="page-img">
                             <img src="/regulations/dvp-en.png" alt="">
                         </div>
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">Download：</span><a href="">DVP Application Form</a>
+                            <span class="highlight">Download：</span><a href="https://docs.google.com/document/d/1-0OmT2_zMA-R1kcc9CxfNZ4t3HxKf63C/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">DVP Application Form</a>
                         </div>  
                     </div>
                 </div>
                 
                 <div class="cta">
-                    <a href="/en/regulations" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             Back
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -60,3 +57,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>

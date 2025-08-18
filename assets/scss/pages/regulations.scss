@@ -3,6 +3,7 @@
 
 .p-regulations{
     animation: page-rise 1.5s abstracts.$easeOutQuint;
+    min-height: calc(100vh - 325px - 108px);
     @keyframes page-rise {
         from { transform: translateY(20px); opacity: 0; }
         to   { transform: translateY(0);    opacity: 1; }

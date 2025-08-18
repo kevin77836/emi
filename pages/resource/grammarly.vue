@@ -18,7 +18,7 @@
                     </div>
                     <div class="page-group">
                         <p>
-                            ※ 本案採購為教育版軟體服務，需請以 xxx＠nycu.edu.tw 信箱報名，方可通過。<br>
+                            ※ 本案採購為教育版軟體服務，需請以 <span class="email">xxx＠nycu.edu.tw</span> 信箱報名，方可通過。<br>
                             ※ 已向國立臺灣大學EMI教學資源中心申請之教師（使用期限至2024年6月30日）請勿重複申請。<br>
                             ※ 本次Grammarly申請帳號預計於12月底至1月初開通，意者請儘速報名。<br>
                             ※ 帳號開通後，若逾3個月未使用，本辦公室將刪除帳號。<br>
@@ -41,11 +41,11 @@
                 </div>
                 
                 <div class="cta">
-                    <a href="/resource" class="c-button">
-                        <div class="hero-cta-text">
+                    <a @click="backPage" class="c-button">
+                        <div>
                             回上一頁
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
@@ -54,3 +54,8 @@
         </section>
     </div>
 </template>
+
+<script setup>
+    const smartBack = useSmartBack();
+    const backPage = () => smartBack();
+</script>
