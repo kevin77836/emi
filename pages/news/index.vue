@@ -87,7 +87,7 @@ const newsData = ref([
     {
         label: '教師',
         name: 'faculty',
-        title: '教師',
+        title: '校內/外活動',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',
@@ -114,7 +114,7 @@ const newsData = ref([
     {
         label: '學生',
         name: 'student',
-        title: '學生',
+        title: '校內/外活動',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',
@@ -141,7 +141,7 @@ const newsData = ref([
     {
         label: '助教',
         name: 'assistant',
-        title: '助教',
+        title: '校內/外活動',
         data:[
                 {
                     title: '申請英語檢測獎勵說明',

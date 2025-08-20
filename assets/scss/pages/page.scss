@@ -24,6 +24,9 @@
             }
             .c-title{
                 margin-bottom: 3.75rem;
+                @include mixins.max-lg{
+                    margin-bottom: 2.5rem;
+                }
             }
             .page-content{
                 font-family: "Inter", sans-serif;
@@ -62,6 +65,9 @@
                     a{
                         font-weight: 700;
                         color: #0000FF;
+                        display: inline-block;
+                        width: 100%;
+                        word-wrap:break-word;
                     }
                     .link-group{
                         display: flex;

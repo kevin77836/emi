@@ -15,8 +15,8 @@
                             For detailed course information, please refer to the documents below:
                         </p>
                         <div class="link-group">
-                            <a href="https://drive.google.com/file/d/1r46nEw4JqrOg-PmuEHEPZgqlvQNIq8f1/view?usp=sharing">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
-                            <a href="https://drive.google.com/file/d/1F5l4znWx1ZLynIannC6ek9QqrkH1zRlM/view?usp=sharing">《Frequently Asked Questions》</a>
+                            <a href="https://drive.google.com/uc?export=download&id=1r46nEw4JqrOg-PmuEHEPZgqlvQNIq8f1">《Participant Instructions - Accessing your Oxford EMI Self-Access course》</a>
+                            <a href="https://drive.google.com/uc?export=download&id=1F5l4znWx1ZLynIannC6ek9QqrkH1zRlM">《Frequently Asked Questions》</a>
                         </div>
                     </div>
                     <div class="page-group">

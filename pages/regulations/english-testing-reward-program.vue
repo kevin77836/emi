@@ -41,7 +41,7 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載 :</span><a href="https://drive.google.com/file/d/1Dq0tT7FFCEx7kzV95XHWEn26cpqeUi9Z/view?usp=sharing">英語檢測獎勵方案</a>
+                            <span class="highlight">下載 :</span><a href="https://drive.google.com/uc?export=download&id=1Dq0tT7FFCEx7kzV95XHWEn26cpqeUi9Z">英語檢測獎勵方案</a>
                         </div>  
                     </div>
                 </div>

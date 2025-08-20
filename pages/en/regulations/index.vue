@@ -43,7 +43,7 @@ const regulationsData = ref([
                 },
                 {
                     title: 'English Testing Reward Program',
-                    link: 'https://drive.google.com/file/d/1Dq0tT7FFCEx7kzV95XHWEn26cpqeUi9Z/view?usp=sharing'
+                    link: 'https://drive.google.com/uc?export=download&id=1Dq0tT7FFCEx7kzV95XHWEn26cpqeUi9Z'
                 },
                 {
                     title: 'Course Selection Policy',
