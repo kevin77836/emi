@@ -38,7 +38,7 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">Download：</span><a href="https://docs.google.com/document/d/1-0OmT2_zMA-R1kcc9CxfNZ4t3HxKf63C/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">DVP Application Form</a>
+                            <span class="highlight">Download：</span><a href="https://drive.google.com/uc?export=download&id=1-0OmT2_zMA-R1kcc9CxfNZ4t3HxKf63C">DVP Application Form</a>
                         </div>  
                     </div>
                 </div>

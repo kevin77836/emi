@@ -140,7 +140,7 @@ const regulationsData = ref([
     {
         icon: '/faculty/icon-faculty-2.svg',
         title: '國立陽明交通大學國際合作課程補助計畫',
-        link: '/regulations/supplementary-classes'
+        link: '/regulations/international-collaborative-course'
     }
 ])
 </script>

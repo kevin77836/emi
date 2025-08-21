@@ -58,7 +58,7 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載申請表：</span><a href="https://docs.google.com/document/d/1s4vRgxw7u0-97Te2bWwIcMzAhyW_8B8l/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">EMI補充課程補助申請表</a>
+                            <span class="highlight">下載申請表：</span><a href="https://drive.google.com/uc?export=download&id=1s4vRgxw7u0-97Te2bWwIcMzAhyW_8B8l">EMI補充課程補助申請表</a>
                         </div>  
                     </div>
                 </div>

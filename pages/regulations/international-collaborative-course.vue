@@ -91,7 +91,7 @@
                     
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載申請表：</span><a href="https://docs.google.com/document/d/1hpDPwS2Ql4CYh-wjMDN1wFX7ZEGSAmYf/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">國際合作課程補助計畫書格式</a>
+                            <span class="highlight">下載申請表：</span><a href="https://drive.google.com/uc?export=download&id=1hpDPwS2Ql4CYh-wjMDN1wFX7ZEGSAmYf">國際合作課程補助計畫書格式</a>
                         </div>  
                     </div>
                 </div>

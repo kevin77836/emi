@@ -37,7 +37,7 @@
                     </div>
                     <div class="page-group">
                         <div>
-                            <span class="highlight">下載申請表：</span><a href="https://docs.google.com/document/d/1-0OmT2_zMA-R1kcc9CxfNZ4t3HxKf63C/edit?usp=sharing&ouid=103609433754049523591&rtpof=true&sd=true">DVP計畫補助申請表</a>
+                            <span class="highlight">下載申請表：</span><a href="https://drive.google.com/uc?export=download&id=1-0OmT2_zMA-R1kcc9CxfNZ4t3HxKf63C">DVP計畫補助申請表</a>
                         </div>  
                     </div>
                 </div>
