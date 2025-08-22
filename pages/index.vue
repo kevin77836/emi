@@ -37,10 +37,10 @@
                         />
                     </div>
                     <a href="/news" class="c-button">
-                        <div class="hero-cta-text">
+                        <div class="button-text">
                             更多消息
                         </div>
-                        <div class="hero-cta-img">
+                        <div class="button-img">
                             <img src="/icon-arrow.svg" alt="">
                         </div>
                     </a>
