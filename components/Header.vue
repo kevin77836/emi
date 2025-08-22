@@ -38,7 +38,7 @@
                     <a v-for="(item, index) in menuGroups[0].items"
                        :key="'hamburger-menu-group-1-item-' + index"
                        :href="item.link"
-                       class="hamburger-menu-group hamburger-menu-group-1-item">
+                       class="hamburger-menu-item hamburger-menu-group-1-item">
                         {{ item.text }}
                     </a>
                 </div>
@@ -47,7 +47,7 @@
                     <a v-for="(item, index) in menuGroups[1].items"
                        :key="'hamburger-menu-group-2-item-' + index"
                        :href="item.link"
-                       class="hamburger-menu-group hamburger-menu-group-2-item">
+                       class="hamburger-menu-item hamburger-menu-group-2-item">
                         {{ item.text }}
                     </a>
                 </div>
